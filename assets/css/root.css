@@ -13,14 +13,17 @@
 }
 
 :root {
-    --font-xsm: 14px;
-    --font-sm: 16px;
-    --font-md: 20px;
+    --font-xs: 14px;
+    --font-xsm: 16px;
+    --font-sm: 20px;
+    --font-md: 27.93px;
     --font-lg: 32px;
     --font-xl: 48px;
+    --font-xxl: 64px;
     --color-white: #ffffff;
     --color-light-white: #CFCED3;
     --color-dark-blue: #140865;
+    --color-purple: #8B78F8;
     --color-blue: #553Af5;
     --color-light-blue: #5B5293;
     --color-grey: #4d4d4d;
@@ -28,6 +31,10 @@
 }
 
 /* font size */
+.text-xs {
+    font-size: var(--font-xs);
+}
+
 .text-xsm {
     font-size: var(--font-xsm);
 }
@@ -46,6 +53,10 @@
 
 .text-xl {
     font-size: var(--font-xl);
+}
+
+.text-xxl {
+    font-size: var(--font-xxl);
 }
 
 /* text colors */
@@ -70,8 +81,12 @@
     color: var(--color-light-blue);
 }
 
+.color-purple {
+    color: var(--color-purple);
+}
+
 .color-grey {
-    color: var( --color-grey);
+    color: var(--color-grey);
 }
 
 .color-light-grey {

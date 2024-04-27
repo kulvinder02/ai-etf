@@ -1,0 +1,31 @@
+* {
+    list-style: none;
+    text-decoration: none !important;
+}
+
+.body {
+    background-color: #0D0C19;
+}
+
+/* =============================common-classes====================== */
+/* ------------------------line-height--------------- */
+.lh_124 {
+    line-height: 124%;
+}
+
+.lh_85 {
+    line-height: 85%;
+}
+
+/* ----------------------gap------------------- */
+.gap_34 {
+    gap: 34px;
+}
+
+/* =============================header====================== */
+.bg_header {
+    background-image: url("../images/png/bgheader.png");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
