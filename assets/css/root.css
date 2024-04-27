@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&display=swap');
+
+.ff_opensans {
+    font-family: "Open Sans", sans-serif;
+}
+
+.ff_inter {
+    font-family: "Inter", sans-serif;
+}
+
+.ff_orbitron {
+    font-family: "Orbitron", sans-serif;
+}
+
+:root {
+    --font-xsm: 14px;
+    --font-sm: 16px;
+    --font-md: 20px;
+    --font-lg: 32px;
+    --font-xl: 48px;
+    --color-white: #ffffff;
+    --color-light-white: #CFCED3;
+    --color-dark-blue: #140865;
+    --color-blue: #553Af5;
+    --color-light-blue: #5B5293;
+    --color-grey: #4d4d4d;
+    --color-light-grey: #B6B5B9;
+}
+
+/* font size */
+.text-xsm {
+    font-size: var(--font-xsm);
+}
+
+.text-sm {
+    font-size: var(--font-sm);
+}
+
+.text-md {
+    font-size: var(--font-md);
+}
+
+.text-lg {
+    font-size: var(--font-lg);
+}
+
+.text-xl {
+    font-size: var(--font-xl);
+}
+
+/* text colors */
+
+.color-white {
+    color: var(--color-white);
+}
+
+.color-light-white {
+    color: var(--color-light-white);
+}
+
+.color-dark-blue {
+    color: var(--color-dark-blue);
+}
+
+.color-blue {
+    color: var(--color-blue);
+}
+
+.color-light-blue {
+    color: var(--color-light-blue);
+}
+
+.color-grey {
+    color: var( --color-grey);
+}
+
+.color-light-grey {
+    color: var(--color-light-grey);
+}
