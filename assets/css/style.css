@@ -27,7 +27,7 @@
 }
 
 .common_btn {
-    padding: 24.2px 34px 24.3px 34px;
+    padding: 24.23px 34px 24.23px 34px;
     border-radius: 132px;
     border: 1px solid white;
     background: #553AF5;
@@ -81,5 +81,11 @@
 
     .cross .line3 {
         transform: rotate(-50deg) translateY(-50%);
+    }
+}
+
+@media (min-width:1200px) {
+    .custom_container {
+        max-width: 1164px;
     }
 }
