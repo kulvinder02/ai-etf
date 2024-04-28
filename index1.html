@@ -19,13 +19,25 @@
                     <a class="ff_orbitron text-md fw-bold text-white lh_124 text-uppercase" href=""> <span
                             class="color-purple">AI</span>
                         ETF</a>
-                    <ul class="mb-0 d-flex gap_34">
+                    <ul class="mb-0 d-flex gap_34 mobile_screen z-3">
                         <li><a class="text-white ff_inter fw-normal text-xsm lh_85" href="">HOME</a></li>
                         <li><a class="text-white ff_inter fw-normal text-xsm lh_85" href="">BENEFIT</a></li>
                         <li><a class="text-white ff_inter fw-normal text-xsm lh_85" href="">AI STOCKS</a></li>
+                        <li class="d-flex d-lg-none">
+                            <a href=""
+                                class="ff_inter fw-bold text-white text-xsm text-uppercase common_btn lh_116">SIGN
+                                UP</a>
+                        </li>
                     </ul>
-                    <div>
-                        <button class="ff_inter fw-bold text-white text-xsm text-uppercase">SIGN UP</button>
+                    <div class="d-none d-lg-flex">
+                        <button class="ff_inter fw-bold text-white text-xsm text-uppercase common_btn lh_116">SIGN
+                            UP</button>
+                    </div>
+                    <div onclick="openNav()" id="menubtn-icon"
+                        class="d-flex d-lg-none justify-content-between gap-1 menu_btn flex-column z-3">
+                        <span class="line1"></span>
+                        <span class="w-50 line2"></span>
+                        <span class="line3"></span>
                     </div>
                 </div>
             </nav>
@@ -36,6 +48,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="./assets/js/app.js"></script>
 </body>
 
 </html>
