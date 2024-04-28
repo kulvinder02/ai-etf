@@ -34,12 +34,20 @@
     box-shadow: 0px 4px 53.2px 0px #553AF594;
 }
 
+.custom_container {
+    max-width: 1164px !important;
+}
+
 /* =============================header====================== */
 .bg_header {
     background-image: url("../images/png/bgheader.png");
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.pb_nav {
+    padding-bottom: 90.38px;
 }
 
 @media (max-width: 992px) {
@@ -49,7 +57,7 @@
         min-height: 100vh;
         width: 100%;
         right: -100%;
-        background-color: #86ccea;
+        background-color: #0D0C19;
         transition: 300ms linear;
     }
 
@@ -82,10 +90,14 @@
     .cross .line3 {
         transform: rotate(-50deg) translateY(-50%);
     }
+
+    .bg_header {
+        background-size: cover;
+    }
 }
 
-@media (min-width:1200px) {
+@media (max-width:1200px) {
     .custom_container {
-        max-width: 1164px;
+        max-width: unset !important;
     }
 }
