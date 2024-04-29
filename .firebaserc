@@ -1,0 +1,9 @@
+{
+  "projects": {
+<<<<<<< HEAD
+    "default": "ai-etf"
+=======
+    "default": "ai-etf-55720"
+>>>>>>> 8ca4d2b9a5f2509b4f43431c7589097719923661
+  }
+}
