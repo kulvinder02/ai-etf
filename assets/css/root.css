@@ -22,13 +22,14 @@
     --font-xxl: 64px;
     --color-white: #ffffff;
     --color-light-white: #CFCED3;
+    --color-extralight-white: #ccc4fc;
     --color-dark-blue: #140865;
     --color-purple: #8B78F8;
     --color-blue: #553Af5;
     --color-light-blue: #5B5293;
     --color-extralight-blue: #c8c1f4;
     --color-grey: #4d4d4d;
-    --color-light-grey: #B6B5B9;
+    --color-light-grey: #B7B6Be;
 }
 /* background color */
 .bg-blue{
@@ -71,6 +72,9 @@
 
 .color-light-white {
     color: var(--color-light-white);
+}
+.color-extralight-white {
+    color: var(--color-extralight-white);
 }
 
 .color-dark-blue {
