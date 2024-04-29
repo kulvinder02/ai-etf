@@ -31,6 +31,7 @@
     --color-light-white: #CFCED3;
     --color-extralight-white: #ccc4fc;
     --color-dark-blue: #140865;
+    --color-light-purple: #544C8D;
     --color-purple: #8B78F8;
     --color-blue: #553Af5;
     --color-light-blue: #5B5293;
@@ -106,6 +107,9 @@
 .color-purple {
     color: var(--color-purple);
 }
+.color-light-purple {
+    color: var(--color-light-purple);
+}
 
 .color-extralight-blue {
     color: var(--color-extralight-blue);
@@ -129,7 +133,7 @@
         --font-xsm: 16px;
         --font-sm: 16px;
         --font-md: 27.93px;
-        --font-lg: 32px;
+        --font-lg: 18px;
         --font-xl: 24px;
         --font-xxl: 64px;
     }
@@ -256,13 +260,36 @@ body {
     border-radius: 15px !important;
     border: 1px solid #553AF5 !important;
 }
-
+#work_slider .slcik-slide{
+    margin: 10px !important;
+}
+/* ---------statistics--------- */
+.bg_grey{
+    background-color: #EAEAEA;
+}
+.statistics_bg{
+    height: 350px;
+    background-image: url("../images/png/arrows-vector-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.statics_heading{
+    transform: translateY(60px) !important;
+}
+.statics_slider{
+    transform: translateY(-170px) !important;
+}
+.register_text{
+    transform: translateY(-60px) !important;
+}
 @media (max-width: 991.9px) {
+    .statics_slider .slick-dot{
+        display: block !important;
+    }
     .step_slider_box {
-        padding: 30px 15px !important;
+        padding:15px 8px !important;
 
     }
-
     .step_circle {
         font-size: 40px !important;
         height: 88px;
@@ -315,6 +342,9 @@ body {
     .step_slider_box {
         padding: 30px 22px !important;
     }
+    .statistics_bg {
+        background-image: url("../images/png/arrows-sm-vector-bg.png");
+    }   
 
     .slick-dots {
         display: block !important;

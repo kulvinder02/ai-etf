@@ -301,6 +301,9 @@
 }
 
 @media (max-width:767.9px) {
+    .statistics_bg {
+        background-image: url("../images/png/arrows-sm-vector-bg.png");
+    }
     .jeff_img {
         height: 231.88px;
     }
