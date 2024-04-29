@@ -28,6 +28,7 @@
     --color-light-blue: #5B5293;
     --color-grey: #4d4d4d;
     --color-light-grey: #B6B5B9;
+    --color-light-black: #0D0C19;
 }
 
 /* font size */
@@ -91,4 +92,21 @@
 
 .color-light-grey {
     color: var(--color-light-grey);
+}
+
+.color-light-black {
+    color: var(--color-light-black);
+}
+
+@media (max-width:1200px) {
+    :root {
+        --font-xl: 40px;
+    }
+}
+
+@media (max-width:576px) {
+    :root {
+        --font-lg: 18px;
+        --font-xl: 26px;
+    }
 }
