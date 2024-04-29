@@ -28,7 +28,7 @@
 <body>
     <!-- ---------------------header------------------ -->
     <div class="bg_header position-relative">
-        <div class="position-absolute header_ellips"></div>
+        <div class="position-absolute header_ellips d-sm-flex d-none"></div>
         <div class="container custom_container pt-4 position-relative z-1">
             <nav class="pt-1 pb_nav">
                 <div class="d-flex align-items-center justify-content-between">
@@ -78,9 +78,10 @@
                         since last year, which brought</span> the share price from $7 to $10.</p>
             </div>
             <div class="row justify-content-between pb_header">
-                <div class="col-xl-7 col-lg-5 col-12 d-flex flex-column align-items-center">
+                <div class="col-xl-7 col-lg-6 col-12 d-flex flex-column align-items-center">
                     <div class="position-relative">
-                        <img src="./assets/images/png/liveimg.png" alt="liveimg" class="w-100 position-absolute live_img">
+                        <img src="./assets/images/png/liveimg.png" alt="liveimg"
+                            class="w-100 position-absolute live_img">
                         <img src="./assets/images/png/aiImg.png" alt="aiImg" class="w-100 ai_img mb-3">
                     </div>
                     <div class="d-sm-flex flex-column align-items-lg-start align-items-center d-none">
@@ -145,7 +146,7 @@
                     </div>
                 </div>
                 <div
-                    class="col-xl-5 col-lg-6 col-12 d-flex flex-column align-items-lg-end align-items-center pt-lg-0 pt-sm-4">
+                    class="col-xl-5 col-lg-5 col-12 d-flex flex-column align-items-lg-end align-items-center pt-lg-0 pt-sm-4">
                     <div class="ai_card w-100">
                         <div class="ai_contentbox">
                             <p class="mb-0 lh_120 ff_opensans text-center text-lg fw-normal text-white">This is the
@@ -157,16 +158,16 @@
                         </div>
                         <form class="ai_form d-flex flex-column" id="myForm" onsubmit="return validateForm()">
                             <input placeholder="First Name" type="text" id="firstname" name="firstname"
-                                class="ff_inter fw-normal text-xsm color-light-black text-capitalize lh_116 w-100 mb-sm-3">
+                                class="ff_inter fw-normal text-xsm color-light-black text-capitalize lh_116 w-100 mb-xl-3 mb-sm-2">
                             <div id="firstnameError" class="error"></div>
                             <input placeholder="Last Name" type="text" id="lastname" name="lastname"
-                                class="ff_inter fw-normal text-xsm color-light-black text-capitalize lh_116 w-100 mt-sm-1 mb-sm-3">
+                                class="ff_inter fw-normal text-xsm color-light-black text-capitalize lh_116 w-100 mt-sm-1 mb-xl-3 mb-sm-2">
                             <div id="lastnameError" class="error"></div>
                             <input placeholder="Email" type="email" id="email" name="email"
-                                class="ff_inter fw-normal text-xsm color-light-black text-capitalize lh_116 w-100 mt-sm-1 mb-sm-3">
+                                class="ff_inter fw-normal text-xsm color-light-black text-capitalize lh_116 w-100 mt-sm-1 mb-xl-3 mb-sm-2">
                             <div id="emailError" class="error"></div>
                             <input placeholder="Phone Number" type="tel" id="phone" name="phone"
-                                class="ff_inter fw-normal text-xsm color-light-black text-capitalize lh_116 w-100 mt-sm-1 mb-sm-3">
+                                class="ff_inter fw-normal text-xsm color-light-black text-capitalize lh_116 w-100 mt-sm-1 mb-xl-3 mb-sm-2">
                             <div id="phoneError" class="error"></div>
                             <input type="submit" value="SIGN UP"
                                 class="w-100 text-center mt-1 text-white ff_inter fw-bold text-xsm lh_116">
