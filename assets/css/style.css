@@ -249,6 +249,10 @@ input[type="submit"] {
     input[type="tel"] {
         padding: 16.5px 0 16.5px 18px;
     }
+
+    input[type="submit"] {
+        padding: 15.88px;
+    }
 }
 
 @media (min-width:1200px) {
