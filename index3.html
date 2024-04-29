@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- link css -->
+    <link rel="stylesheet" href="./assets/css/style3.css">
+    <!-- link root -->
+    <link rel="stylesheet" href="./assets/css/root.css">
+    <link rel="stylesheet" href="./assets/images/png/favicon.png">
+    <title>Ai Etf</title>
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- slider-link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- ---------------------header------------------ -->
+    <div class="bg_header">
+        <div class="container custom_container pt-4">
+            <nav class="pt-1 pb_nav">
+                <div class="d-flex align-items-center justify-content-between">
+                    <a class="ff_orbitron text-md fw-bold text-white lh_124 text-uppercase" href=""> <span
+                            class="color-purple">AI</span>
+                        ETF</a>
+                    <ul id="navbar"
+                        class="mb-0 d-flex gap_34 justify-content-center align-items-center flex-column list-unstyled flex-lg-row mb-0 mobile_screen z-3">
+                        <li><a onclick="openNav()" class="text-white ff_inter fw-normal text-xsm lh_85"
+                                href="#home">HOME</a>
+                        </li>
+                        <li><a onclick="openNav()" class="text-white ff_inter fw-normal text-xsm lh_85"
+                                href="#benefit">BENEFIT</a>
+                        </li>
+                        <li><a onclick="openNav()" class="text-white ff_inter fw-normal text-xsm lh_85"
+                                href="#stocks">AI
+                                STOCKS</a></li>
+                        <li class="d-flex d-lg-none">
+                            <a href=""
+                                class="ff_inter fw-bold text-white text-xsm text-uppercase common_btn lh_116">SIGN
+                                UP</a>
+                        </li>
+                    </ul>
+                    <div class="d-none d-lg-flex">
+                        <button class="ff_inter fw-bold text-white text-xsm text-uppercase common_btn lh_116">SIGN
+                            UP</button>
+                    </div>
+                    <div onclick="openNav()" id="menubtn-icon"
+                        class="d-flex d-lg-none justify-content-between gap-1 menu_btn flex-column z-3">
+                        <span class="line1"></span>
+                        <span class="w-50 line2"></span>
+                        <span class="line3"></span>
+                    </div>
+                </div>
+            </nav>
+            <div
+                class="d-flex flex-lg-row flex-column align-items-center justify-content-center justify-content-lg-between gap-2 mb-sm-4">
+                <h1
+                    class="ff_opensans text-capitalize lh_120 fw-semibold text-lg-start text-center text-xl text-white mw_687">
+                    AI ETFs are expected to
+                    <span class="color-blue ">grow 119.37%.</span> Here are the top 5 AI ETFs.
+                </h1>
+                <p class="lh_160 text-white opacity_80 mb-0 ff_inter text-lg-start text-center fw-normal text-sm"><span
+                        class="d-xl-block">We have seen a
+                        significant growth
+                        of</span><span class="d-xl-block">40%
+                        since last year, which brought</span> the share price from $7 to $10.</p>
+            </div>
+            <div class="row justify-content-between pb_header">
+                <div class="col-xl-7 col-lg-5 col-12 d-flex flex-column align-items-center">
+                    <img src="./assets/images/png/aiImg.png" alt="aiImg" class="w-100 ai_img mb-3">
+                    <div class="d-sm-flex flex-column align-items-lg-start align-items-center d-none">
+                        <p class="text-center lh_120 ff_inter fw-bold text-sm text-white mb-0 mt-4 pt-1"><span
+                                class="d-lg-block">Due
+                                to
+                                extremely high demand for
+                                media
+                                coverage,</span>
+                            registration
+                            closes in</p>
+                        <div id="countdown" class="countdown_box d-flex gap_14">
+                            <div class="d-flex align-items-center gap_12">
+                                <div class="countdown count_day h-100 d-flex align-items-center justify-content-center">
+                                    <span id="days" class="ff_inter fw-bold text-white text-lg lh_120 mb-0">0 0</span>
+                                </div>
+                                <svg width="9" height="21" viewBox="0 0 9 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M4.56702 0.790373C4.87737 0.790373 5.58271 1.25589 6.68303 2.18694C7.78336 3.11798 8.33352 3.75279 8.33352 4.09135C8.33352 4.4017 7.78336 5.0365 6.68303 5.99576C5.58271 6.95501 4.87737 7.43464 4.56702 7.43464C4.25668 7.43464 3.55134 6.95501 2.45102 5.99576C1.35069 5.0365 0.800528 4.4017 0.800528 4.09135C0.800528 3.75279 1.35069 3.11798 2.45102 2.18694C3.57955 1.25589 4.28489 0.790373 4.56702 0.790373ZM4.1015 13.952C4.41185 13.952 5.11719 14.4175 6.21751 15.3485C7.31784 16.2796 7.868 16.9144 7.868 17.2529C7.868 17.5633 7.31784 18.1981 6.21751 19.1573C5.11719 20.1166 4.41185 20.5962 4.1015 20.5962C3.79115 20.5962 3.08582 20.1166 1.98549 19.1573C0.885168 18.1981 0.335006 17.5633 0.335006 17.2529C0.335006 16.9144 0.885168 16.2796 1.98549 15.3485C3.11403 14.4175 3.81937 13.952 4.1015 13.952Z"
+                                        fill="#553AF5" />
+                                </svg>
+                            </div>
+                            <div class="d-flex align-items-center gap_12">
+                                <div
+                                    class="countdown count_hour h-100 d-flex align-items-center justify-content-center">
+                                    <span id="hours" class="ff_inter fw-bold text-white text-lg lh_120 mb-0">0 1</span>
+                                </div>
+                                <svg width="9" height="21" viewBox="0 0 9 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M4.56702 0.790373C4.87737 0.790373 5.58271 1.25589 6.68303 2.18694C7.78336 3.11798 8.33352 3.75279 8.33352 4.09135C8.33352 4.4017 7.78336 5.0365 6.68303 5.99576C5.58271 6.95501 4.87737 7.43464 4.56702 7.43464C4.25668 7.43464 3.55134 6.95501 2.45102 5.99576C1.35069 5.0365 0.800528 4.4017 0.800528 4.09135C0.800528 3.75279 1.35069 3.11798 2.45102 2.18694C3.57955 1.25589 4.28489 0.790373 4.56702 0.790373ZM4.1015 13.952C4.41185 13.952 5.11719 14.4175 6.21751 15.3485C7.31784 16.2796 7.868 16.9144 7.868 17.2529C7.868 17.5633 7.31784 18.1981 6.21751 19.1573C5.11719 20.1166 4.41185 20.5962 4.1015 20.5962C3.79115 20.5962 3.08582 20.1166 1.98549 19.1573C0.885168 18.1981 0.335006 17.5633 0.335006 17.2529C0.335006 16.9144 0.885168 16.2796 1.98549 15.3485C3.11403 14.4175 3.81937 13.952 4.1015 13.952Z"
+                                        fill="#553AF5" />
+                                </svg>
+                            </div>
+                            <div class="d-flex align-items-center gap_12">
+                                <div
+                                    class="countdown count_mint h-100 d-flex align-items-center justify-content-center">
+                                    <span id="minutes" class="ff_inter fw-bold text-white text-lg lh_120 mb-0">3
+                                        4</span>
+                                </div>
+                                <svg width="9" height="21" viewBox="0 0 9 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M4.56702 0.790373C4.87737 0.790373 5.58271 1.25589 6.68303 2.18694C7.78336 3.11798 8.33352 3.75279 8.33352 4.09135C8.33352 4.4017 7.78336 5.0365 6.68303 5.99576C5.58271 6.95501 4.87737 7.43464 4.56702 7.43464C4.25668 7.43464 3.55134 6.95501 2.45102 5.99576C1.35069 5.0365 0.800528 4.4017 0.800528 4.09135C0.800528 3.75279 1.35069 3.11798 2.45102 2.18694C3.57955 1.25589 4.28489 0.790373 4.56702 0.790373ZM4.1015 13.952C4.41185 13.952 5.11719 14.4175 6.21751 15.3485C7.31784 16.2796 7.868 16.9144 7.868 17.2529C7.868 17.5633 7.31784 18.1981 6.21751 19.1573C5.11719 20.1166 4.41185 20.5962 4.1015 20.5962C3.79115 20.5962 3.08582 20.1166 1.98549 19.1573C0.885168 18.1981 0.335006 17.5633 0.335006 17.2529C0.335006 16.9144 0.885168 16.2796 1.98549 15.3485C3.11403 14.4175 3.81937 13.952 4.1015 13.952Z"
+                                        fill="#553AF5" />
+                                </svg>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <div class="countdown conut_sec h-100 d-flex align-items-center justify-content-center">
+                                    <span id="seconds" class="ff_inter fw-bold text-white text-lg lh_120 mb-0">2
+                                        9</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="col-xl-5 col-lg-6 col-12 d-flex flex-column align-items-lg-end align-items-center pt-lg-0 pt-sm-4">
+                    <div class="ai_card w-100">
+                        <div class="ai_contentbox">
+                            <p class="mb-0 lh_120 ff_opensans text-center text-lg fw-normal text-white">This is the
+                                right time to
+                                invest in <span class="text-uppercase fw-bolder">AI ETF</span></p>
+                            <p class="mb-0 opacity_80 text-white ff_inter fw-normal lh_160 text-xsm text-center"><span
+                                    class="d-lg-block mt_10">In a matter of
+                                    minutes one of our AI mentors</span> will contact you, No Experience Required!</p>
+                        </div>
+                        <form class="ai_form d-flex flex-column" id="myForm" onsubmit="return validateForm()">
+                            <input placeholder="First Name" type="text" id="firstname" name="firstname"
+                                class="ff_inter fw-normal text-xsm color-light-black text-capitalize lh_116 w-100 mb-sm-3">
+                            <div id="firstnameError" class="error"></div>
+                            <input placeholder="Last Name" type="text" id="lastname" name="lastname"
+                                class="ff_inter fw-normal text-xsm color-light-black text-capitalize lh_116 w-100 mt-sm-1 mb-sm-3">
+                            <div id="lastnameError" class="error"></div>
+                            <input placeholder="Email" type="email" id="email" name="email"
+                                class="ff_inter fw-normal text-xsm color-light-black text-capitalize lh_116 w-100 mt-sm-1 mb-sm-3">
+                            <div id="emailError" class="error"></div>
+                            <input placeholder="Phone Number" type="tel" id="phone" name="phone"
+                                class="ff_inter fw-normal text-xsm color-light-black text-capitalize lh_116 w-100 mt-sm-1 mb-sm-3">
+                            <div id="phoneError" class="error"></div>
+                            <input type="submit" value="SIGN UP"
+                                class="w-100 text-center mt-1 text-white ff_inter fw-bold text-xsm lh_116">
+                        </form>
+                    </div>
+                    <p class="text-center d-flex d-sm-none lh_120 ff_inter fw-bold text-sm text-white mb-0">
+                        Due to
+                        extremely high demand for
+                        media coverage,
+                        registration closes in</p>
+                    <div class="countdown_box d-flex d-sm-none d-flex gap_14">
+                        <div class="d-flex align-items-center gap_12">
+                            <div class="countdown count_day h-100 d-flex align-items-center justify-content-center">
+                                <span id="days" class="ff_inter days fw-bold text-white text-lg lh_120 mb-0">0 0</span>
+                            </div>
+                            <svg width="9" height="21" viewBox="0 0 9 21" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4.56702 0.790373C4.87737 0.790373 5.58271 1.25589 6.68303 2.18694C7.78336 3.11798 8.33352 3.75279 8.33352 4.09135C8.33352 4.4017 7.78336 5.0365 6.68303 5.99576C5.58271 6.95501 4.87737 7.43464 4.56702 7.43464C4.25668 7.43464 3.55134 6.95501 2.45102 5.99576C1.35069 5.0365 0.800528 4.4017 0.800528 4.09135C0.800528 3.75279 1.35069 3.11798 2.45102 2.18694C3.57955 1.25589 4.28489 0.790373 4.56702 0.790373ZM4.1015 13.952C4.41185 13.952 5.11719 14.4175 6.21751 15.3485C7.31784 16.2796 7.868 16.9144 7.868 17.2529C7.868 17.5633 7.31784 18.1981 6.21751 19.1573C5.11719 20.1166 4.41185 20.5962 4.1015 20.5962C3.79115 20.5962 3.08582 20.1166 1.98549 19.1573C0.885168 18.1981 0.335006 17.5633 0.335006 17.2529C0.335006 16.9144 0.885168 16.2796 1.98549 15.3485C3.11403 14.4175 3.81937 13.952 4.1015 13.952Z"
+                                    fill="#553AF5" />
+                            </svg>
+                        </div>
+                        <div class="d-flex align-items-center gap_12">
+                            <div class="countdown count_hour h-100 d-flex align-items-center justify-content-center">
+                                <span class="ff_inter fw-bold text-white text-lg lh_120 mb-0">0 1</span>
+                            </div>
+                            <svg width="9" height="21" viewBox="0 0 9 21" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4.56702 0.790373C4.87737 0.790373 5.58271 1.25589 6.68303 2.18694C7.78336 3.11798 8.33352 3.75279 8.33352 4.09135C8.33352 4.4017 7.78336 5.0365 6.68303 5.99576C5.58271 6.95501 4.87737 7.43464 4.56702 7.43464C4.25668 7.43464 3.55134 6.95501 2.45102 5.99576C1.35069 5.0365 0.800528 4.4017 0.800528 4.09135C0.800528 3.75279 1.35069 3.11798 2.45102 2.18694C3.57955 1.25589 4.28489 0.790373 4.56702 0.790373ZM4.1015 13.952C4.41185 13.952 5.11719 14.4175 6.21751 15.3485C7.31784 16.2796 7.868 16.9144 7.868 17.2529C7.868 17.5633 7.31784 18.1981 6.21751 19.1573C5.11719 20.1166 4.41185 20.5962 4.1015 20.5962C3.79115 20.5962 3.08582 20.1166 1.98549 19.1573C0.885168 18.1981 0.335006 17.5633 0.335006 17.2529C0.335006 16.9144 0.885168 16.2796 1.98549 15.3485C3.11403 14.4175 3.81937 13.952 4.1015 13.952Z"
+                                    fill="#553AF5" />
+                            </svg>
+                        </div>
+                        <div class="d-flex align-items-center gap_12">
+                            <div class="countdown count_mint h-100 d-flex align-items-center justify-content-center">
+                                <span class="ff_inter minutes_ fw-bold text-white text-lg lh_120 mb-0">3 4</span>
+                            </div>
+                            <svg width="9" height="21" viewBox="0 0 9 21" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4.56702 0.790373C4.87737 0.790373 5.58271 1.25589 6.68303 2.18694C7.78336 3.11798 8.33352 3.75279 8.33352 4.09135C8.33352 4.4017 7.78336 5.0365 6.68303 5.99576C5.58271 6.95501 4.87737 7.43464 4.56702 7.43464C4.25668 7.43464 3.55134 6.95501 2.45102 5.99576C1.35069 5.0365 0.800528 4.4017 0.800528 4.09135C0.800528 3.75279 1.35069 3.11798 2.45102 2.18694C3.57955 1.25589 4.28489 0.790373 4.56702 0.790373ZM4.1015 13.952C4.41185 13.952 5.11719 14.4175 6.21751 15.3485C7.31784 16.2796 7.868 16.9144 7.868 17.2529C7.868 17.5633 7.31784 18.1981 6.21751 19.1573C5.11719 20.1166 4.41185 20.5962 4.1015 20.5962C3.79115 20.5962 3.08582 20.1166 1.98549 19.1573C0.885168 18.1981 0.335006 17.5633 0.335006 17.2529C0.335006 16.9144 0.885168 16.2796 1.98549 15.3485C3.11403 14.4175 3.81937 13.952 4.1015 13.952Z"
+                                    fill="#553AF5" />
+                            </svg>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="countdown conut_sec h-100 d-flex align-items-center justify-content-center">
+                                <span class="ff_inter seconds_ fw-bold text-white text-lg lh_120 mb-0">2 9</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -------------------------ai-slider-------------------------- -->
+    <div class="bg_black pt_slider">
+        <div class="responsive d-flex">
+            <div class="slide">
+                <div class="ai_slide d-flex flex-column align-items-center w-100 position-relative">
+                    <div class="common_slideellips position-absolute start-0"></div>
+                    <img src="./assets/images/png/brentimg.png" alt="brentimg" class="w-100 slide_img">
+                    <p class="mb-0 ff_inter fw-bold text-white text-xsm text-center lh_116">Brent</p>
+                    <p class="my_9 ff_inter fw-normal text-xsm lh_116 text-nowrap text-center text-white">Profit:
+                        <span class="fw-bold">$32,911</span>
+                    </p>
+                    <p class="ff_inter fw-normal text-xsm lh_116 text-center text-nowrap text-white mb-0">Current
+                        Balance:
+                        <span class="fw-bold">$55,780</span>
+                    </p>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="ai_slide d-flex flex-column align-items-center w-100 position-relative">
+                    <div class="common_slideellips position-absolute start-0"></div>
+                    <img src="./assets/images/png/feliciaimg.png" alt="feliciaimg" class="w-100 slide_img">
+                    <p class="mb-0 ff_inter fw-bold text-white text-capitalize text-xsm text-center lh_116">Felicia
+                    </p>
+                    <p class="my_9 ff_inter fw-normal text-xsm lh_116 text-nowrap text-center text-white">Profit:
+                        <span class="fw-bold">$2,o41</span>
+                    </p>
+                    <p
+                        class="ff_inter fw-normal text-capitalize text-nowrap text-xsm lh_116 text-center text-white mb-0">
+                        Current Balance:
+                        <span class="fw-bold">$4,587</span>
+                    </p>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="ai_slide d-flex flex-column align-items-center w-100 position-relative">
+                    <div class="common_slideellips position-absolute start-0"></div>
+                    <img src="./assets/images/png/brianimg.png" alt="brianimg" class="w-100 slide_img">
+                    <p class="mb-0 ff_inter fw-bold text-white text-capitalize text-xsm text-center lh_116">Brian
+                    </p>
+                    <p class="my_9 ff_inter fw-normal text-xsm text-nowrap lh_116 text-center text-white">Profit:
+                        <span class="fw-bold">$62,233</span>
+                    </p>
+                    <p
+                        class="ff_inter fw-normal text-capitalize text-nowrap text-xsm lh_116 text-center text-white mb-0">
+                        Current Balance:
+                        <span class="fw-bold">$105,080</span>
+                    </p>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="ai_slide d-flex flex-column align-items-center w-100 position-relative">
+                    <div class="common_slideellips position-absolute start-0"></div>
+                    <img src="./assets/images/png/murrayimg.png" alt="murrayimg" class="w-100 slide_img">
+                    <p class="mb-0 ff_inter fw-bold text-white text-capitalize text-xsm text-center lh_116">Murray
+                    </p>
+                    <p class="my_9 ff_inter fw-normal text-xsm text-nowrap lh_116 text-center text-white">Profit:
+                        <span class="fw-bold">$35,449</span>
+                    </p>
+                    <p
+                        class="ff_inter fw-normal text-capitalize text-nowrap text-xsm lh_116 text-center text-white mb-0">
+                        Current Balance:
+                        <span class="fw-bold">$68,187</span>
+                    </p>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="ai_slide d-flex flex-column align-items-center w-100 position-relative">
+                    <div class="common_slideellips position-absolute start-0"></div>
+                    <img src="./assets/images/png/tamaraimg.png" alt="tamaraimg" class="w-100 slide_img">
+                    <p class="mb-0 ff_inter fw-bold text-white text-capitalize text-xsm text-center lh_116">Tamara
+                    </p>
+                    <p class="my_9 ff_inter fw-normal text-xsm text-nowrap lh_116 text-center text-white">Profit:
+                        <span class="fw-bold">$4,930</span>
+                    </p>
+                    <p
+                        class="ff_inter fw-normal text-capitalize text-nowrap text-xsm lh_116 text-center text-white mb-0">
+                        Current Balance:
+                        <span class="fw-bold">$12,230</span>
+                    </p>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="ai_slide d-flex flex-column align-items-center w-100 position-relative">
+                    <div class="common_slideellips position-absolute start-0"></div>
+                    <img src="./assets/images/png/murrayimg.png" alt="murrayimg" class="w-100 slide_img">
+                    <p class="mb-0 ff_inter fw-bold text-white text-capitalize text-xsm text-center lh_116">Murray
+                    </p>
+                    <p class="my_9 ff_inter fw-normal text-xsm text-nowrap lh_116 text-center text-white">Profit:
+                        <span class="fw-bold">$35,449</span>
+                    </p>
+                    <p
+                        class="ff_inter fw-normal text-capitalize text-nowrap text-xsm lh_116 text-center text-white mb-0">
+                        Current Balance:
+                        <span class="fw-bold">$68,187</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- bootstrap link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- slider-link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"
+        integrity="sha512-eP8DK17a+MOcKHXC5Yrqzd8WI5WKh6F1TIk5QZ/8Lbv+8ssblcz7oGC8ZmQ/ZSAPa7ZmsCU4e/hcovqR8jfJqA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>
