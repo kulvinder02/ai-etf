@@ -4,44 +4,67 @@ function openNav() {
     document.body.classList.toggle("overflow_hidden");
     document.getElementById("menubtn-icon").classList.toggle("cross")
 }
-<<<<<<< HEAD
 // ----------------------------countdown---------------------
-var targetDate = new Date('2024-05-01T00:00:00').getTime();
-=======
-// countdown
-// Function to start the countdown timer
-function startCountdown(duration) {
-    let timer = duration, days, hours, minutes, seconds;
-    setInterval(function () {
-        days = parseInt(timer / (3600 * 24), 10);
-        hours = parseInt((timer % (3600 * 24)) / 3600, 10);
-        minutes = parseInt((timer % 3600) / 60, 10);
-        seconds = parseInt(timer % 60, 10);
->>>>>>> 11da2e7df1733f89a88db389a389e8ae65e09172
+function countdown() {
+    const endDate = new Date("2024-05-01 00:00:00").getTime();
 
-        days = days < 10 ? "0" + days : days;
-        hours = hours < 10 ? "0" + hours : hours;
-        minutes = minutes < 10 ? "0" + minutes : minutes;
-        seconds = seconds < 10 ? "0" + seconds : seconds;
+    const timer = setInterval(function () {
+        const now = new Date().getTime();
+        const distance = endDate - now;
 
-        document.getElementById('days').textContent = days;
-        document.getElementById('hours').textContent = hours;
-        document.getElementById('minutes').textContent = minutes;
-        document.getElementById('seconds').textContent = seconds;
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-        if (--timer < 0) {
-            timer = duration;
+        document.getElementById("days").innerHTML = formatTime(days);
+        document.getElementById("hours").innerHTML = formatTime(hours);
+        document.getElementById("minutes").innerHTML = formatTime(minutes);
+        document.getElementById("seconds").innerHTML = formatTime(seconds);
+
+        if (distance < 0) {
+            clearInterval(timer);
+            document.querySelector('.counter').innerHTML = '<div>Expired</div>';
         }
     }, 1000);
 }
 
-// Start the countdown timer when the page loads
-window.onload = function () {
-    // Change the duration as per your requirement (in seconds)
-    startCountdown(296400); // 1 day countdown (24 hours * 60 minutes * 60 seconds)
-};
+function formatTime(time) {
+    return time < 10 ? `0${time}` : time;
+}
 
 countdown();
+
+// -------------------count-down---------------------
+function counterapp() {
+    const endDate = new Date("2024-05-01 00:00:00").getTime();
+
+    const timer = setInterval(function () {
+        const now = new Date().getTime();
+        const distance = endDate - now;
+
+        const day = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hour = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minute = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const second = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("day").innerHTML = formatTime(day);
+        document.getElementById("hour").innerHTML = formatTime(hour);
+        document.getElementById("minute").innerHTML = formatTime(minute);
+        document.getElementById("second").innerHTML = formatTime(second);
+
+        if (distance < 0) {
+            clearInterval(timer);
+            document.querySelector('.counterapp').innerHTML = '<div>Expired</div>';
+        }
+    }, 1000);
+}
+
+function formatTime(time) {
+    return time < 10 ? `0${time}` : time;
+}
+
+counterapp();
 //  -------------------form validation------------------------------
 function validateForm() {
     var firstName = document.getElementById('firstname').value.trim();
@@ -91,10 +114,8 @@ function validateForm() {
 
     return isValid;
 }
-<<<<<<< HEAD
-=======
 
-// slider---
+// ========slider=========
 $('.responsive').slick({
     dots: false,
     arrows: false,
@@ -106,27 +127,47 @@ $('.responsive').slick({
     slidesToScroll: 1,
     responsive: [
         {
-            breakpoint: 1024,
+            breakpoint: 1200,
             settings: {
-                slidesToShow: 3,
-                slidesToScroll: 3,
+                slidesToShow: 4.50,
                 infinite: true,
             }
         },
         {
-            breakpoint: 992,
+            breakpoint: 1160,
             settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2
+                slidesToShow: 4,
             }
         },
         {
-            breakpoint: 480,
+            breakpoint: 960,
             settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
+                slidesToShow: 3.80,
             }
-        }
+        },
+        {
+            breakpoint: 905,
+            settings: {
+                slidesToShow: 3,
+            }
+        },
+        {
+            breakpoint: 783,
+            settings: {
+                slidesToShow: 2.80,
+            }
+        },
+        {
+            breakpoint: 675,
+            settings: {
+                slidesToShow: 2,
+            }
+        },
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 1.20,
+            }
+        },
     ]
 });
->>>>>>> 11da2e7df1733f89a88db389a389e8ae65e09172

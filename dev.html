@@ -27,8 +27,9 @@
 
 <body>
     <!-- ---------------------header------------------ -->
-    <div class="bg_header">
-        <div class="container custom_container pt-4">
+    <div class="bg_header position-relative">
+        <div class="position-absolute header_ellips"></div>
+        <div class="container custom_container pt-4 position-relative z-1">
             <nav class="pt-1 pb_nav">
                 <div class="d-flex align-items-center justify-content-between">
                     <a class="ff_orbitron text-md fw-bold text-white lh_124 text-uppercase" href=""> <span
@@ -78,7 +79,10 @@
             </div>
             <div class="row justify-content-between pb_header">
                 <div class="col-xl-7 col-lg-5 col-12 d-flex flex-column align-items-center">
-                    <img src="./assets/images/png/aiImg.png" alt="aiImg" class="w-100 ai_img mb-3">
+                    <div class="position-relative">
+                        <img src="./assets/images/png/liveimg.png" alt="liveimg" class="w-100 position-absolute live_img">
+                        <img src="./assets/images/png/aiImg.png" alt="aiImg" class="w-100 ai_img mb-3">
+                    </div>
                     <div class="d-sm-flex flex-column align-items-lg-start align-items-center d-none">
                         <p class="text-center lh_120 ff_inter fw-bold text-sm text-white mb-0 mt-4 pt-1"><span
                                 class="d-lg-block">Due
@@ -88,9 +92,11 @@
                                 coverage,</span>
                             registration
                             closes in</p>
-                        <div id="countdown" class="countdown_box d-flex gap_14">
+                        <div id="countdown" class="countdown_box counter d-flex gap_14">
                             <div class="d-flex align-items-center gap_12">
-                                <div class="countdown count_day h-100 d-flex align-items-center justify-content-center">
+                                <div
+                                    class="countdown overflow-hidden count_day h-100 d-flex align-items-center justify-content-center position-relative">
+                                    <div class="position-absolute counter_ellips"></div>
                                     <span id="days" class="ff_inter fw-bold text-white text-lg lh_120 mb-0">0 0</span>
                                 </div>
                                 <svg width="9" height="21" viewBox="0 0 9 21" fill="none"
@@ -102,7 +108,8 @@
                             </div>
                             <div class="d-flex align-items-center gap_12">
                                 <div
-                                    class="countdown count_hour h-100 d-flex align-items-center justify-content-center">
+                                    class="countdown count_hour h-100 d-flex align-items-center justify-content-center position-relative overflow-hidden">
+                                    <div class="position-absolute counter_ellips"></div>
                                     <span id="hours" class="ff_inter fw-bold text-white text-lg lh_120 mb-0">0 1</span>
                                 </div>
                                 <svg width="9" height="21" viewBox="0 0 9 21" fill="none"
@@ -114,7 +121,8 @@
                             </div>
                             <div class="d-flex align-items-center gap_12">
                                 <div
-                                    class="countdown count_mint h-100 d-flex align-items-center justify-content-center">
+                                    class="countdown count_mint h-100 d-flex align-items-center justify-content-center position-relative overflow-hidden">
+                                    <div class="position-absolute counter_ellips"></div>
                                     <span id="minutes" class="ff_inter fw-bold text-white text-lg lh_120 mb-0">3
                                         4</span>
                                 </div>
@@ -126,7 +134,9 @@
                                 </svg>
                             </div>
                             <div class="d-flex align-items-center">
-                                <div class="countdown conut_sec h-100 d-flex align-items-center justify-content-center">
+                                <div
+                                    class="countdown conut_sec h-100 d-flex align-items-center justify-content-center position-relative overflow-hidden">
+                                    <div class="position-absolute counter_ellips"></div>
                                     <span id="seconds" class="ff_inter fw-bold text-white text-lg lh_120 mb-0">2
                                         9</span>
                                 </div>
@@ -162,61 +172,75 @@
                                 class="w-100 text-center mt-1 text-white ff_inter fw-bold text-xsm lh_116">
                         </form>
                     </div>
-                    <p class="text-center d-flex d-sm-none lh_120 ff_inter fw-bold text-sm text-white mb-0">
-                        Due to
-                        extremely high demand for
-                        media coverage,
-                        registration closes in</p>
-                    <div class="countdown_box d-flex d-sm-none d-flex gap_14">
-                        <div class="d-flex align-items-center gap_12">
-                            <div class="countdown count_day h-100 d-flex align-items-center justify-content-center">
-                                <span id="days" class="ff_inter days fw-bold text-white text-lg lh_120 mb-0">0 0</span>
+                    <div class="d-flex justify-content-center flex-column align-items-center d-sm-none">
+                        <p class="text-center lh_120 ff_inter fw-bold text-sm text-white mb-0">
+                            Due to
+                            extremely high demand for
+                            media coverage,
+                            registration closes in</p>
+                        <div id="counterapp" class="countdown_box counterapp d-flex gap_14">
+                            <div class="d-flex align-items-center gap_12">
+                                <div
+                                    class="countdown count_day h-100 d-flex align-items-center justify-content-center position-relative overflow-hidden">
+                                    <div class="position-absolute counter_ellips"></div>
+                                    <span id="day" class="ff_inter days fw-bold text-white text-lg lh_120 mb-0">0
+                                        0</span>
+                                </div>
+                                <svg width="9" height="21" viewBox="0 0 9 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M4.56702 0.790373C4.87737 0.790373 5.58271 1.25589 6.68303 2.18694C7.78336 3.11798 8.33352 3.75279 8.33352 4.09135C8.33352 4.4017 7.78336 5.0365 6.68303 5.99576C5.58271 6.95501 4.87737 7.43464 4.56702 7.43464C4.25668 7.43464 3.55134 6.95501 2.45102 5.99576C1.35069 5.0365 0.800528 4.4017 0.800528 4.09135C0.800528 3.75279 1.35069 3.11798 2.45102 2.18694C3.57955 1.25589 4.28489 0.790373 4.56702 0.790373ZM4.1015 13.952C4.41185 13.952 5.11719 14.4175 6.21751 15.3485C7.31784 16.2796 7.868 16.9144 7.868 17.2529C7.868 17.5633 7.31784 18.1981 6.21751 19.1573C5.11719 20.1166 4.41185 20.5962 4.1015 20.5962C3.79115 20.5962 3.08582 20.1166 1.98549 19.1573C0.885168 18.1981 0.335006 17.5633 0.335006 17.2529C0.335006 16.9144 0.885168 16.2796 1.98549 15.3485C3.11403 14.4175 3.81937 13.952 4.1015 13.952Z"
+                                        fill="#553AF5" />
+                                </svg>
                             </div>
-                            <svg width="9" height="21" viewBox="0 0 9 21" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M4.56702 0.790373C4.87737 0.790373 5.58271 1.25589 6.68303 2.18694C7.78336 3.11798 8.33352 3.75279 8.33352 4.09135C8.33352 4.4017 7.78336 5.0365 6.68303 5.99576C5.58271 6.95501 4.87737 7.43464 4.56702 7.43464C4.25668 7.43464 3.55134 6.95501 2.45102 5.99576C1.35069 5.0365 0.800528 4.4017 0.800528 4.09135C0.800528 3.75279 1.35069 3.11798 2.45102 2.18694C3.57955 1.25589 4.28489 0.790373 4.56702 0.790373ZM4.1015 13.952C4.41185 13.952 5.11719 14.4175 6.21751 15.3485C7.31784 16.2796 7.868 16.9144 7.868 17.2529C7.868 17.5633 7.31784 18.1981 6.21751 19.1573C5.11719 20.1166 4.41185 20.5962 4.1015 20.5962C3.79115 20.5962 3.08582 20.1166 1.98549 19.1573C0.885168 18.1981 0.335006 17.5633 0.335006 17.2529C0.335006 16.9144 0.885168 16.2796 1.98549 15.3485C3.11403 14.4175 3.81937 13.952 4.1015 13.952Z"
-                                    fill="#553AF5" />
-                            </svg>
-                        </div>
-                        <div class="d-flex align-items-center gap_12">
-                            <div class="countdown count_hour h-100 d-flex align-items-center justify-content-center">
-                                <span class="ff_inter fw-bold text-white text-lg lh_120 mb-0">0 1</span>
+                            <div class="d-flex align-items-center gap_12">
+                                <div
+                                    class="countdown count_hour h-100 d-flex align-items-center justify-content-center position-relative overflow-hidden">
+                                    <div class="position-absolute counter_ellips"></div>
+                                    <span id="hour" class="ff_inter fw-bold text-white text-lg lh_120 mb-0">0 1</span>
+                                </div>
+                                <svg width="9" height="21" viewBox="0 0 9 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M4.56702 0.790373C4.87737 0.790373 5.58271 1.25589 6.68303 2.18694C7.78336 3.11798 8.33352 3.75279 8.33352 4.09135C8.33352 4.4017 7.78336 5.0365 6.68303 5.99576C5.58271 6.95501 4.87737 7.43464 4.56702 7.43464C4.25668 7.43464 3.55134 6.95501 2.45102 5.99576C1.35069 5.0365 0.800528 4.4017 0.800528 4.09135C0.800528 3.75279 1.35069 3.11798 2.45102 2.18694C3.57955 1.25589 4.28489 0.790373 4.56702 0.790373ZM4.1015 13.952C4.41185 13.952 5.11719 14.4175 6.21751 15.3485C7.31784 16.2796 7.868 16.9144 7.868 17.2529C7.868 17.5633 7.31784 18.1981 6.21751 19.1573C5.11719 20.1166 4.41185 20.5962 4.1015 20.5962C3.79115 20.5962 3.08582 20.1166 1.98549 19.1573C0.885168 18.1981 0.335006 17.5633 0.335006 17.2529C0.335006 16.9144 0.885168 16.2796 1.98549 15.3485C3.11403 14.4175 3.81937 13.952 4.1015 13.952Z"
+                                        fill="#553AF5" />
+                                </svg>
                             </div>
-                            <svg width="9" height="21" viewBox="0 0 9 21" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M4.56702 0.790373C4.87737 0.790373 5.58271 1.25589 6.68303 2.18694C7.78336 3.11798 8.33352 3.75279 8.33352 4.09135C8.33352 4.4017 7.78336 5.0365 6.68303 5.99576C5.58271 6.95501 4.87737 7.43464 4.56702 7.43464C4.25668 7.43464 3.55134 6.95501 2.45102 5.99576C1.35069 5.0365 0.800528 4.4017 0.800528 4.09135C0.800528 3.75279 1.35069 3.11798 2.45102 2.18694C3.57955 1.25589 4.28489 0.790373 4.56702 0.790373ZM4.1015 13.952C4.41185 13.952 5.11719 14.4175 6.21751 15.3485C7.31784 16.2796 7.868 16.9144 7.868 17.2529C7.868 17.5633 7.31784 18.1981 6.21751 19.1573C5.11719 20.1166 4.41185 20.5962 4.1015 20.5962C3.79115 20.5962 3.08582 20.1166 1.98549 19.1573C0.885168 18.1981 0.335006 17.5633 0.335006 17.2529C0.335006 16.9144 0.885168 16.2796 1.98549 15.3485C3.11403 14.4175 3.81937 13.952 4.1015 13.952Z"
-                                    fill="#553AF5" />
-                            </svg>
-                        </div>
-                        <div class="d-flex align-items-center gap_12">
-                            <div class="countdown count_mint h-100 d-flex align-items-center justify-content-center">
-                                <span class="ff_inter minutes_ fw-bold text-white text-lg lh_120 mb-0">3 4</span>
+                            <div class="d-flex align-items-center gap_12">
+                                <div
+                                    class="countdown count_mint h-100 d-flex align-items-center justify-content-center position-relative overflow-hidden">
+                                    <div class="position-absolute counter_ellips"></div>
+                                    <span id="minute" class="ff_inter fw-bold text-white text-lg lh_120 mb-0">3
+                                        4</span>
+                                </div>
+                                <svg width="9" height="21" viewBox="0 0 9 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M4.56702 0.790373C4.87737 0.790373 5.58271 1.25589 6.68303 2.18694C7.78336 3.11798 8.33352 3.75279 8.33352 4.09135C8.33352 4.4017 7.78336 5.0365 6.68303 5.99576C5.58271 6.95501 4.87737 7.43464 4.56702 7.43464C4.25668 7.43464 3.55134 6.95501 2.45102 5.99576C1.35069 5.0365 0.800528 4.4017 0.800528 4.09135C0.800528 3.75279 1.35069 3.11798 2.45102 2.18694C3.57955 1.25589 4.28489 0.790373 4.56702 0.790373ZM4.1015 13.952C4.41185 13.952 5.11719 14.4175 6.21751 15.3485C7.31784 16.2796 7.868 16.9144 7.868 17.2529C7.868 17.5633 7.31784 18.1981 6.21751 19.1573C5.11719 20.1166 4.41185 20.5962 4.1015 20.5962C3.79115 20.5962 3.08582 20.1166 1.98549 19.1573C0.885168 18.1981 0.335006 17.5633 0.335006 17.2529C0.335006 16.9144 0.885168 16.2796 1.98549 15.3485C3.11403 14.4175 3.81937 13.952 4.1015 13.952Z"
+                                        fill="#553AF5" />
+                                </svg>
                             </div>
-                            <svg width="9" height="21" viewBox="0 0 9 21" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M4.56702 0.790373C4.87737 0.790373 5.58271 1.25589 6.68303 2.18694C7.78336 3.11798 8.33352 3.75279 8.33352 4.09135C8.33352 4.4017 7.78336 5.0365 6.68303 5.99576C5.58271 6.95501 4.87737 7.43464 4.56702 7.43464C4.25668 7.43464 3.55134 6.95501 2.45102 5.99576C1.35069 5.0365 0.800528 4.4017 0.800528 4.09135C0.800528 3.75279 1.35069 3.11798 2.45102 2.18694C3.57955 1.25589 4.28489 0.790373 4.56702 0.790373ZM4.1015 13.952C4.41185 13.952 5.11719 14.4175 6.21751 15.3485C7.31784 16.2796 7.868 16.9144 7.868 17.2529C7.868 17.5633 7.31784 18.1981 6.21751 19.1573C5.11719 20.1166 4.41185 20.5962 4.1015 20.5962C3.79115 20.5962 3.08582 20.1166 1.98549 19.1573C0.885168 18.1981 0.335006 17.5633 0.335006 17.2529C0.335006 16.9144 0.885168 16.2796 1.98549 15.3485C3.11403 14.4175 3.81937 13.952 4.1015 13.952Z"
-                                    fill="#553AF5" />
-                            </svg>
-                        </div>
-                        <div class="d-flex align-items-center">
-                            <div class="countdown conut_sec h-100 d-flex align-items-center justify-content-center">
-                                <span class="ff_inter seconds_ fw-bold text-white text-lg lh_120 mb-0">2 9</span>
+                            <div class="d-flex align-items-center">
+                                <div
+                                    class="countdown conut_sec h-100 d-flex align-items-center justify-content-center position-relative overflow-hidden">
+                                    <div class="position-absolute counter_ellips"></div>
+                                    <span id="second" class="ff_inter fw-bold text-white text-lg lh_120 mb-0">2
+                                        9</span>
+                                </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- -------------------------ai-slider-------------------------- -->
-    <div class="bg_black overflow-hidden pt_slider">
+    <div class="bg_black overflow-hidden py_slider">
         <div class="responsive d-flex">
             <div class="slide">
                 <div class="ai_slide d-flex flex-column align-items-center w-100 position-relative">
-                    <div class="common_slideellips position-absolute start-0"></div>
+                    <div class="common_slideellips position-absolute"></div>
                     <img src="./assets/images/png/brentimg.png" alt="brentimg" class="w-100 slide_img">
                     <p class="mb-0 ff_inter fw-bold text-white text-xsm text-center lh_116">Brent</p>
                     <p class="my_9 ff_inter fw-normal text-xsm lh_116 text-nowrap text-center text-white">Profit:
@@ -230,7 +254,7 @@
             </div>
             <div class="slide">
                 <div class="ai_slide d-flex flex-column align-items-center w-100 position-relative">
-                    <div class="common_slideellips position-absolute start-0"></div>
+                    <div class="common_slideellips position-absolute"></div>
                     <img src="./assets/images/png/feliciaimg.png" alt="feliciaimg" class="w-100 slide_img">
                     <p class="mb-0 ff_inter fw-bold text-white text-capitalize text-xsm text-center lh_116">Felicia
                     </p>
@@ -246,7 +270,7 @@
             </div>
             <div class="slide">
                 <div class="ai_slide d-flex flex-column align-items-center w-100 position-relative">
-                    <div class="common_slideellips position-absolute start-0"></div>
+                    <div class="common_slideellips position-absolute"></div>
                     <img src="./assets/images/png/brianimg.png" alt="brianimg" class="w-100 slide_img">
                     <p class="mb-0 ff_inter fw-bold text-white text-capitalize text-xsm text-center lh_116">Brian
                     </p>
@@ -278,7 +302,7 @@
             </div>
             <div class="slide">
                 <div class="ai_slide d-flex flex-column align-items-center w-100 position-relative">
-                    <div class="common_slideellips position-absolute start-0"></div>
+                    <div class="common_slideellips position-absolute"></div>
                     <img src="./assets/images/png/tamaraimg.png" alt="tamaraimg" class="w-100 slide_img">
                     <p class="mb-0 ff_inter fw-bold text-white text-capitalize text-xsm text-center lh_116">Tamara
                     </p>
@@ -294,7 +318,7 @@
             </div>
             <div class="slide">
                 <div class="ai_slide d-flex flex-column align-items-center w-100 position-relative">
-                    <div class="common_slideellips position-absolute start-0"></div>
+                    <div class="common_slideellips position-absolute"></div>
                     <img src="./assets/images/png/murrayimg.png" alt="murrayimg" class="w-100 slide_img">
                     <p class="mb-0 ff_inter fw-bold text-white text-capitalize text-xsm text-center lh_116">Murray
                     </p>

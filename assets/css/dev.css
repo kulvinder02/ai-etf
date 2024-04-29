@@ -3,7 +3,8 @@
     text-decoration: none !important;
 }
 
-.body {
+html,
+body {
     background: #0D0C19 !important;
 }
 
@@ -52,11 +53,23 @@
 }
 
 .common_btn {
-    padding: 24.23px 33.18px 24.23px 33.18px;
+    padding: 24.23px 33.18px 24.23px 33.18px !important;
     border-radius: 132px;
     border: 1px solid white;
     background: var(--color-blue);
     box-shadow: 0px 4px 53.2px 0px #553AF594;
+
+}
+
+.common_btn:hover {
+    border: 1px solid var(--color-blue);
+    background: white;
+    color: var(--color-blue) !important;
+}
+
+.common_btn,
+input[type="submit"] {
+    transition: all 300ms linear
 }
 
 /* =============================header====================== */
@@ -68,7 +81,7 @@
 }
 
 .pb_nav {
-    padding-bottom: 90.38px;
+    padding-bottom: 90.38px !important;
 }
 
 .mw_687 {
@@ -80,8 +93,8 @@
 }
 
 .countdown_box {
-    margin-top: 35px;
-    padding: 11px 9px 11px 9px;
+    margin-top: 35px !important;
+    padding: 11px 9px 11px 9px !important;
     border-radius: 20px;
     background: #8989890D;
     border: 1px solid #FFFFFF17
@@ -117,22 +130,22 @@
 
 .ai_contentbox {
     background-color: var(--color-blue);
-    padding: 15.14px 36.93px 15px 35.84px;
+    padding: 15.14px 36.93px 15px 35.84px !important;
     border-radius: 16px;
 }
 
 .mt_10 {
-    margin-top: 10.86px;
+    margin-top: 10.86px !important;
 }
 
 .ai_form {
-    padding: 18px 21px 18px 21px;
+    padding: 18px 21px 18px 21px !important;
 }
 
 input[type="text"],
 input[type="email"],
 input[type="tel"] {
-    padding: 22.24px 0 22.24px 18px;
+    padding: 22.24px 0 22.24px 18px !important;
     border: 1px solid #ccc;
     outline: none;
     box-shadow: 0px 0px 13.54px 0px #FFFFFF08 inset;
@@ -141,12 +154,17 @@ input[type="tel"] {
 }
 
 input[type="submit"] {
-    padding: 24.24px;
+    padding: 24.24px !important;
     background-color: var(--color-blue);
-    border: none;
     border-radius: 132px;
     box-shadow: 0px 4px 53.2px 0px #553AF594;
     border: 1px solid #FFFFFF
+}
+
+input[type="submit"]:hover {
+    background-color: white;
+    color: var(--color-blue) !important;
+    border: 1px solid var(--color-blue);
 }
 
 .error {
@@ -155,19 +173,19 @@ input[type="submit"] {
 }
 
 .pb_header {
-    padding-bottom: 69px;
+    padding-bottom: 69px !important;
 }
 
 .ai_slide {
     border: 1px solid #FFFFFF17;
     background: #8989890D;
     border-radius: 10px;
-    padding: 21.17px 37px 21.17px 37px;
+    padding: 21.17px 37px 21.17px 37px !important;
 }
 
 .slide_img {
     max-width: 101.61px;
-    margin-bottom: 9.35px;
+    margin-bottom: 9.35px !important;
 }
 
 .common_slideellips {
@@ -175,18 +193,48 @@ input[type="submit"] {
     height: 79.3px;
     border-radius: 79.3px;
     bottom: 27%;
-    filter: blur(75px);
+    left: 31px;
+    filter: blur(65px);
     background: #553AF5;
 }
 
+.live_img {
+    max-width: 89.63px;
+    right: 14px;
+    top: 12.87px;
+}
+
 .my_9 {
-    margin-top: 9.35px;
-    margin-bottom: 9.35px;
+    margin-top: 9.35px !important;
+    margin-bottom: 9.35px !important;
 }
 
 .slide {
     padding: 0 16.2px !important;
 }
+
+.py_slider {
+    padding-bottom: 90px !important;
+}
+
+.counter_ellips {
+    width: 44.02px;
+    height: 18.06px;
+    background: #553AF5;
+    filter: blur(15.8px);
+    top: 71.2px;
+}
+
+.header_ellips {
+    width: 311.89px;
+    height: 311.89px;
+    border-radius: 311.89px;
+    filter: blur(100px);
+    background: rgba(85, 58, 245, 0.6);
+    left: -15%;
+    top: 13%;
+}
+
 
 @media (max-width: 992px) {
     .mobile_screen {
@@ -242,8 +290,12 @@ input[type="submit"] {
     }
 
     .countdown_box {
-        margin-top: 20px;
-        max-width: 505px;
+        margin-top: 20px !important;
+        max-width: 505px !important;
+    }
+
+    .slide {
+        padding: 0 10px !important;
     }
 
 }
@@ -268,41 +320,42 @@ input[type="submit"] {
     }
 
     .countdown_box {
-        padding: 7px 10px 7px 10px;
-        max-width: unset;
+        padding: 7px 10px 7px 10px !important;
+        max-width: unset !important;
     }
 
     .ai_img {
-        margin-top: 31px;
-        margin-bottom: 12px;
+        margin-top: 31px !important;
+        margin-bottom: 12px !important;
     }
 
     .pb_nav {
-        padding-bottom: 63.51px;
+        padding-bottom: 63.51px !important;
     }
 
     .ai_form {
-        padding: 16px 21px 24.83px 21px;
+        padding: 16px 21px 24.83px 21px !important;
         gap: 5px;
     }
 
     .ai_card {
-        margin-bottom: 50px;
+        margin-bottom: 50px !important;
     }
 
     input[type="text"],
     input[type="email"],
     input[type="tel"] {
-        padding: 16.5px 0 16.5px 18px;
+        padding: 16.5px 0 16.5px 18px !important;
     }
 
     input[type="submit"] {
-        padding: 15.88px;
+        padding: 15.88px !important;
     }
 
     .pb_header {
-        padding-bottom: 41.5px;
+        padding-bottom: 41.5px !important;
     }
+
 }
 
 @media (min-width:1200px) {
@@ -310,7 +363,8 @@ input[type="submit"] {
         max-width: 1164px !important;
     }
 
-    .pt_slider {
-        padding-top: 102px;
+    .py_slider {
+        padding-top: 102px !important;
+
     }
 }
