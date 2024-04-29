@@ -282,7 +282,13 @@ body {
 .register_text{
     transform: translateY(-60px) !important;
 }
+.max_w_278{
+    max-width: 268px;
+}
 @media (max-width: 991.9px) {
+    .statistics_bg {
+        transform: translateY(82px);
+    }
     .statics_slider .slick-dot{
         display: block !important;
     }
@@ -339,12 +345,23 @@ body {
 }
 
 @media (max-width:767.9px) {
+    .statistics_bg{
+        height: 272px;
+    }
+    #statics_slider .slick-dots{
+        bottom: -32% !important;
+    }
+    .statics_slider{
+        transform: translateY(-155px) !important;
+    }
     .step_slider_box {
         padding: 30px 22px !important;
     }
     .statistics_bg {
-        background-image: url("../images/png/arrows-sm-vector-bg.png");
-    }   
+        transform: translateY(78px);
+        background-size: 100% 57%;
+        background-image: url("../images/png/arrows-sm-vector-bg.png") !important;
+    }
 
     .slick-dots {
         display: block !important;

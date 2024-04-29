@@ -229,6 +229,9 @@
 }
 
 @media (max-width:1200px) {
+    .statistics_bg {
+        transform: translateY(40px);
+    }
     .about_advisors {
         padding: 12px 19px 19px 19px;
     }
