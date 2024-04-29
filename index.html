@@ -8,11 +8,23 @@
     <link rel="stylesheet" href="./assets/css/style3.css">
     <!-- link root -->
     <link rel="stylesheet" href="./assets/css/root.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style3.css">
     <link rel="stylesheet" href="./assets/images/png/favicon.png">
     <title>Ai Etf</title>
     <!-- bootstrap link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- slider-link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -157,10 +169,10 @@
                         extremely high demand for
                         media coverage,
                         registration closes in</p>
-                    <div id="countdown" class="countdown_box d-flex d-sm-none d-flex gap_14">
+                    <div class="countdown_box d-flex d-sm-none d-flex gap_14">
                         <div class="d-flex align-items-center gap_12">
                             <div class="countdown count_day h-100 d-flex align-items-center justify-content-center">
-                                <span id="days" class="ff_inter fw-bold text-white text-lg lh_120 mb-0">0 0</span>
+                                <span id="days" class="ff_inter days fw-bold text-white text-lg lh_120 mb-0">0 0</span>
                             </div>
                             <svg width="9" height="21" viewBox="0 0 9 21" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -171,7 +183,7 @@
                         </div>
                         <div class="d-flex align-items-center gap_12">
                             <div class="countdown count_hour h-100 d-flex align-items-center justify-content-center">
-                                <span id="hours" class="ff_inter fw-bold text-white text-lg lh_120 mb-0">0 1</span>
+                                <span class="ff_inter fw-bold text-white text-lg lh_120 mb-0">0 1</span>
                             </div>
                             <svg width="9" height="21" viewBox="0 0 9 21" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -182,7 +194,7 @@
                         </div>
                         <div class="d-flex align-items-center gap_12">
                             <div class="countdown count_mint h-100 d-flex align-items-center justify-content-center">
-                                <span id="minutes" class="ff_inter fw-bold text-white text-lg lh_120 mb-0">3 4</span>
+                                <span class="ff_inter minutes_ fw-bold text-white text-lg lh_120 mb-0">3 4</span>
                             </div>
                             <svg width="9" height="21" viewBox="0 0 9 21" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -193,7 +205,7 @@
                         </div>
                         <div class="d-flex align-items-center">
                             <div class="countdown conut_sec h-100 d-flex align-items-center justify-content-center">
-                                <span id="seconds" class="ff_inter fw-bold text-white text-lg lh_120 mb-0">2 9</span>
+                                <span class="ff_inter seconds_ fw-bold text-white text-lg lh_120 mb-0">2 9</span>
                             </div>
                         </div>
                     </div>
@@ -202,16 +214,101 @@
         </div>
     </div>
     <!-- -------------------------ai-slider-------------------------- -->
-    <div class="bg-blck">
-        <div class="marquee">
-            <div class="marquee-content">
-                <div class="marquee-item">
-                    <div class="ai_slide">
-                        <img src="./assets/images/png/brentimg.png" alt="brentimg" class="w-100 slide_img">
-                        <p class="mb-0 ff_inter fw-bold text-white text-xsm text-center lh_116">Brent</p>
-                    </div>
+    <div class="bg_black overflow-hidden pt_slider">
+        <div class="responsive d-flex">
+            <div class="slide">
+                <div class="ai_slide d-flex flex-column align-items-center w-100 position-relative">
+                    <div class="common_slideellips position-absolute start-0"></div>
+                    <img src="./assets/images/png/brentimg.png" alt="brentimg" class="w-100 slide_img">
+                    <p class="mb-0 ff_inter fw-bold text-white text-xsm text-center lh_116">Brent</p>
+                    <p class="my_9 ff_inter fw-normal text-xsm lh_116 text-nowrap text-center text-white">Profit:
+                        <span class="fw-bold">$32,911</span>
+                    </p>
+                    <p class="ff_inter fw-normal text-xsm lh_116 text-center text-nowrap text-white mb-0">Current
+                        Balance:
+                        <span class="fw-bold">$55,780</span>
+                    </p>
                 </div>
-
+            </div>
+            <div class="slide">
+                <div class="ai_slide d-flex flex-column align-items-center w-100 position-relative">
+                    <div class="common_slideellips position-absolute start-0"></div>
+                    <img src="./assets/images/png/feliciaimg.png" alt="feliciaimg" class="w-100 slide_img">
+                    <p class="mb-0 ff_inter fw-bold text-white text-capitalize text-xsm text-center lh_116">Felicia
+                    </p>
+                    <p class="my_9 ff_inter fw-normal text-xsm lh_116 text-nowrap text-center text-white">Profit:
+                        <span class="fw-bold">$2,o41</span>
+                    </p>
+                    <p
+                        class="ff_inter fw-normal text-capitalize text-nowrap text-xsm lh_116 text-center text-white mb-0">
+                        Current Balance:
+                        <span class="fw-bold">$4,587</span>
+                    </p>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="ai_slide d-flex flex-column align-items-center w-100 position-relative">
+                    <div class="common_slideellips position-absolute start-0"></div>
+                    <img src="./assets/images/png/brianimg.png" alt="brianimg" class="w-100 slide_img">
+                    <p class="mb-0 ff_inter fw-bold text-white text-capitalize text-xsm text-center lh_116">Brian
+                    </p>
+                    <p class="my_9 ff_inter fw-normal text-xsm text-nowrap lh_116 text-center text-white">Profit:
+                        <span class="fw-bold">$62,233</span>
+                    </p>
+                    <p
+                        class="ff_inter fw-normal text-capitalize text-nowrap text-xsm lh_116 text-center text-white mb-0">
+                        Current Balance:
+                        <span class="fw-bold">$105,080</span>
+                    </p>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="ai_slide d-flex flex-column align-items-center w-100 position-relative">
+                    <div class="common_slideellips position-absolute start-0"></div>
+                    <img src="./assets/images/png/murrayimg.png" alt="murrayimg" class="w-100 slide_img">
+                    <p class="mb-0 ff_inter fw-bold text-white text-capitalize text-xsm text-center lh_116">Murray
+                    </p>
+                    <p class="my_9 ff_inter fw-normal text-xsm text-nowrap lh_116 text-center text-white">Profit:
+                        <span class="fw-bold">$35,449</span>
+                    </p>
+                    <p
+                        class="ff_inter fw-normal text-capitalize text-nowrap text-xsm lh_116 text-center text-white mb-0">
+                        Current Balance:
+                        <span class="fw-bold">$68,187</span>
+                    </p>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="ai_slide d-flex flex-column align-items-center w-100 position-relative">
+                    <div class="common_slideellips position-absolute start-0"></div>
+                    <img src="./assets/images/png/tamaraimg.png" alt="tamaraimg" class="w-100 slide_img">
+                    <p class="mb-0 ff_inter fw-bold text-white text-capitalize text-xsm text-center lh_116">Tamara
+                    </p>
+                    <p class="my_9 ff_inter fw-normal text-xsm text-nowrap lh_116 text-center text-white">Profit:
+                        <span class="fw-bold">$4,930</span>
+                    </p>
+                    <p
+                        class="ff_inter fw-normal text-capitalize text-nowrap text-xsm lh_116 text-center text-white mb-0">
+                        Current Balance:
+                        <span class="fw-bold">$12,230</span>
+                    </p>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="ai_slide d-flex flex-column align-items-center w-100 position-relative">
+                    <div class="common_slideellips position-absolute start-0"></div>
+                    <img src="./assets/images/png/murrayimg.png" alt="murrayimg" class="w-100 slide_img">
+                    <p class="mb-0 ff_inter fw-bold text-white text-capitalize text-xsm text-center lh_116">Murray
+                    </p>
+                    <p class="my_9 ff_inter fw-normal text-xsm text-nowrap lh_116 text-center text-white">Profit:
+                        <span class="fw-bold">$35,449</span>
+                    </p>
+                    <p
+                        class="ff_inter fw-normal text-capitalize text-nowrap text-xsm lh_116 text-center text-white mb-0">
+                        Current Balance:
+                        <span class="fw-bold">$68,187</span>
+                    </p>
+                </div>
             </div>
         </div>
     </div>
@@ -220,6 +317,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <!-- slider-link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"
+        integrity="sha512-eP8DK17a+MOcKHXC5Yrqzd8WI5WKh6F1TIk5QZ/8Lbv+8ssblcz7oGC8ZmQ/ZSAPa7ZmsCU4e/hcovqR8jfJqA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./assets/js/app.js"></script>
 </body>
 
