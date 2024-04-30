@@ -166,7 +166,7 @@ $('.responsive').slick({
         {
             breakpoint: 576,
             settings: {
-                slidesToShow: 1.20,
+                slidesToShow: 1,
             }
         },
     ]
