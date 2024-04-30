@@ -9,6 +9,10 @@ body {
 }
 
 /* =============================common-classes====================== */
+.cursor_pointer {
+    cursor: pointer;
+}
+
 /* ------------------------line-height--------------- */
 .lh_85 {
     line-height: 85%;
