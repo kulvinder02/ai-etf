@@ -213,7 +213,7 @@ input[type="submit"]:hover {
     padding: 0 16.2px !important;
 }
 
-.py_slider {
+.py_aislider {
     padding-bottom: 90px !important;
 }
 
@@ -384,7 +384,7 @@ input[type="submit"]:hover {
         max-width: 1164px !important;
     }
 
-    .py_slider {
+    .py_aislider {
         padding-top: 102px !important;
 
     }
