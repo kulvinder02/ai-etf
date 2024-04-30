@@ -312,7 +312,7 @@
     </div>
 
     <!-- ------- How it work ------------- -->
-    <div class="pb-5 pb-sm-0 pb-sm-4 pb-lg-5 mb-lg-5 overflow-hidden bg-white">
+    <div class="pb-5 pb-sm-0 pb-sm-4 pb-lg-5 overflow-hidden bg-white">
         <div class="container px-3 custom_container">
             <div class="mt-5 pt-lg-4 d-flex flex-column justify-content-center align-items-center">
                 <h3 class="text-center fw-bold text-xl mb-3 pt-1 pt-md-2 color-dark-blue ff_opensans">
@@ -613,7 +613,8 @@
     </div>
    
     <!-- --------- STATISTICS FOR TODAY --------- -->
-    <div class="bg_grey overflow-hidden">
+    <div class="bg_grey overflow-hidden position-relative">
+        <div class="blur_cirle statics_ellips"></div>
       <div class="md-container mx-auto container_width px-sm-3 pb-4 custom_container pt-sm-5">
         <h3 class="text-center fw-bold text-xl color-dark-blue statics_heading ff_opensans">
           Statistics For <span class="color-blue">Today</span></h3>
@@ -637,6 +638,42 @@
       </div>
     </div>
 
+    <!-- -------  Register today   ------ -->
+
+    <div class="custom_container container pt-5 px-3">
+        <div class="d-flex justify-content-center align-items-center">
+        <h3 class="text-center fw-bold text-xl color-white mb-5 py-5 max_w_758 ff_opensans">
+          Register Today And 
+            <span class="color-blue">Grab Your First Profit!</span></h3>
+        </div>
+            <div class="row mb-5 pb-5">
+                <div class="col-lg-5">
+                    <div class="register_form pt-1">
+                        <h5 class="fw-bold ff_opensans text-lg color-white text-center pt-4 mb-3 px-3">Dominate the markets with AI ETFs</h5>
+                        <p class="ff_inter text-sm lh_160 fw-normal px-2 color-extralight-white text-center">In a matter of minutes one of our AI mentors will contact you, No Experience Required!</p>
+                    <form class="register_form_padding d-flex flex-column" id="myForm" onsubmit="return validateForm()">
+                        <input placeholder="First Name" type="text" id="firstname" name="firstname"
+                            class="ff_inter fw-normal text-xsm color-light-black text-capitalize lh_116 w-100 mb-sm-3">
+                        <div id="firstnameError" class="error"></div>
+                        <input placeholder="Last Name" type="text" id="lastname" name="lastname"
+                            class="ff_inter fw-normal text-xsm color-light-black text-capitalize lh_116 w-100 mt-sm-1 mb-sm-3">
+                        <div id="lastnameError" class="error"></div>
+                        <input placeholder="Email" type="email" id="email" name="email"
+                            class="ff_inter fw-normal text-xsm color-light-black text-capitalize lh_116 w-100 mt-sm-1 mb-sm-3">
+                        <div id="emailError" class="error"></div>
+                        <input placeholder="Phone Number" type="tel" id="phone" name="phone"
+                            class="ff_inter fw-normal text-xsm color-light-black text-capitalize lh_116 w-100 mt-sm-1 mb-sm-3">
+                        <div id="phoneError" class="error"></div>
+                        <input type="submit" value="SIGN UP"
+                            class="w-100 text-center mt-1 text-white ff_inter fw-bold text-xsm lh_116">
+                    </form>
+                </div>
+                </div>
+                <div class="col-lg-7">
+                <div class="d-none d-sm-block">    <img src="./assets/images/png/ellips-group-img.png" class="grop_ellips w-100" alt="ellips"></div>
+                </div>
+            </div>
+    </div>
 
     <!-- bootstrap link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
