@@ -95,17 +95,6 @@
     position: absolute;
 }
 
-.step_slider_box {
-    height: 347px;
-    width: 267px;
-    background: #4F37DD;
-    border-radius: 11.9px;
-    padding: 30px 22px !important;
-    box-shadow: 0px 48.87px 183.25px 0px #00000069;
-    box-shadow: 0px 0px 73.3px 0px #FFFFFF08 inset;
-
-}
-
 .slick-dots {
     display: none !important;
 }
@@ -228,6 +217,10 @@
     filter: grayscale(0%) !important;
 }
 @media (max-width:1200px) {
+    .logos_img {
+        width: 319px !important;
+        height: 85px !important;
+    }
     .group_ellips {
         transform: translateX(0px) !important;
         height: 568.79px !important;
@@ -308,7 +301,7 @@
 
 @media (max-width:767.9px) {
    .scroll_bar_sm{
-    height: 650px !important;
+    height: 580px !important;
     overflow-y: scroll !important;
     overflow-x: hidden;
    }
