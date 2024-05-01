@@ -845,15 +845,15 @@ input[type="submit"]:hover {
     max-width: 471px;
 }
 /* ---------------------------------back-to-top------------------------------------ */
-.BackToTop {
+.back-to-top{
     display: none;
     position: fixed;
-    bottom: 20px;
+    bottom: 70px;
     right: 30px;
     z-index: 6 !important;
     width: 50px !important;
     height: 50px !important;
-    background-color: #0073B1;
+    background-color: #553AF5;
     border: 1px solid white;
     border-radius: 50px;
     box-shadow: 0px 5px 16px #ffffff;
@@ -941,11 +941,11 @@ input[type="submit"]:hover {
     }
 
     .cross .line1 {
-        transform: rotate(50deg) translate(12px, 11px);
+        transform: rotate(52deg) translate(10px, 8px);
     }
 
     .cross .line2 {
-        transform: translateX(-50%);
+        transform: translateX(-35%);
         opacity: 0;
     }
 
