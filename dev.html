@@ -87,7 +87,7 @@
                         <div class="position-relative py_aiImg">
                             <img src="./assets/images/png/liveimg.png" alt="liveimg"
                                 class="w-100 position-absolute live_img cursor_pointer">
-                            <img src="./assets/images/png/aiImg.png" alt="aiImg" class="w-100 ai_img mb-3">
+                            <img src="./assets/images/png/aiImg.png" alt="aiImg" class="w-100 ai_img mb-sm-3">
                         </div>
                         <div class="d-sm-flex flex-column align-items-lg-start align-items-center d-none">
                             <p class="text-center lh_120 ff_inter fw-bold text-sm fs_sm text-white mb-0 mt-4 pt-1"><span
@@ -98,8 +98,8 @@
                                     coverage,</span>
                                 registration
                                 closes in</p>
-                            <div id="countdown" class="countdown_box counter d-flex gap_14">
-                                <div class="d-flex align-items-center gap_12">
+                            <div id="countdown" class="countdown_box counter d-flex gap_counterbox">
+                                <div class="d-flex align-items-center gap_counter">
                                     <div
                                         class="countdown overflow-hidden count_day h-100 d-flex align-items-center justify-content-center position-relative">
                                         <div class="position-absolute counter_ellips"></div>
@@ -113,7 +113,7 @@
                                             fill="#553AF5" />
                                     </svg>
                                 </div>
-                                <div class="d-flex align-items-center gap_12">
+                                <div class="d-flex align-items-center gap_counter">
                                     <div
                                         class="countdown count_hour h-100 d-flex align-items-center justify-content-center position-relative overflow-hidden">
                                         <div class="position-absolute counter_ellips"></div>
@@ -127,7 +127,7 @@
                                             fill="#553AF5" />
                                     </svg>
                                 </div>
-                                <div class="d-flex align-items-center gap_12">
+                                <div class="d-flex align-items-center gap_counter">
                                     <div
                                         class="countdown count_mint h-100 d-flex align-items-center justify-content-center position-relative overflow-hidden">
                                         <div class="position-absolute counter_ellips"></div>
@@ -186,13 +186,13 @@
                         </div>
                         <div class="d-flex justify-content-center flex-column align-items-center d-sm-none">
                             <p
-                                class="text-center lh_120 ff_inter fs_sm px-4 px_duecontent fw-bold text-sm text-white mb-0">
+                                class="text-center lh_120 ff_inter fs_sm px-sm-4 mw_duecontent fw-bold text-sm text-white mb-0">
                                 Due to
                                 extremely high demand for
                                 media coverage,
                                 registration closes in</p>
-                            <div id="counterapp" class="countdown_box counterapp d-flex gap_14">
-                                <div class="d-flex align-items-center gap_12">
+                            <div id="counterapp" class="countdown_box counterapp d-flex gap_counterbox">
+                                <div class="d-flex align-items-center gap_counter">
                                     <div
                                         class="countdown count_day h-100 d-flex align-items-center justify-content-center position-relative overflow-hidden">
                                         <div class="position-absolute counter_ellips"></div>
@@ -206,7 +206,7 @@
                                             fill="#553AF5" />
                                     </svg>
                                 </div>
-                                <div class="d-flex align-items-center gap_12">
+                                <div class="d-flex align-items-center gap_counter">
                                     <div
                                         class="countdown count_hour h-100 d-flex align-items-center justify-content-center position-relative overflow-hidden">
                                         <div class="position-absolute counter_ellips"></div>
@@ -220,7 +220,7 @@
                                             fill="#553AF5" />
                                     </svg>
                                 </div>
-                                <div class="d-flex align-items-center gap_12">
+                                <div class="d-flex align-items-center gap_counter">
                                     <div
                                         class="countdown count_mint h-100 d-flex align-items-center justify-content-center position-relative overflow-hidden">
                                         <div class="position-absolute counter_ellips"></div>
@@ -677,20 +677,22 @@
                         by
                         investing</span> in AI ETFs for <span class="color-blue">high returns</span>
                 </h2>
-                <p class="text-white opacity_70 ff_inter fw-normal lh_160 text-center mb-sm-5 mb-3 pb-4"><span
-                        class="d-lg-block">Artificial
+                <p class="text-white opacity_70 ff_inter fw-normal mw_313 mx-auto lh_160 text-center mb-sm-5 mb-3 pb-4">
+                    <span class="d-lg-block">Artificial
                         Intelligence
                         Exchange
                         Traded Funds are
                         those funds that focus only on the</span><span class="d-lg-block">companies that have
                         evolved in the
-                        development of new products or services and</span> technological improvements related to AI.</p>
+                        development of new products or services and</span> technological improvements related to AI.
+                </p>
                 <div
                     class="d-flex justify-content-xl-between flex-lg-row flex-column gap-3 mt-1 align-items-center mb-4 pb-3">
                     <div class="mw_471 mb_benefitimg d-flex justify-content-center">
                         <img src="./assets/images/png/benefitimg.png" alt="benefitimg" class="w-100 benefit_img">
                     </div>
-                    <div class="benefit_para">
+                    <div class="benefit_para position-relative">
+                        <div class="position-absolute ellips_benefit end-0"></div>
                         <p
                             class="ff_inter text-white opacity_70 mw_333 mx-auto fw-normal text-lg-start text-center lh_160 text-xsm mb-3">
                             Artificial intelligence has
@@ -732,12 +734,11 @@
                         rise over time.
                     </h2>
                     <p
-                        class="lh_164 color-dark-blue text-xsm text-lg-start text-center ff_opensans opacity_70 fw-normal my_returnpara">
+                        class="lh_164 color-dark-blue text-xsm text-lg-start mw_333 mx-auto text-center ff_opensans opacity_70 fw-normal my_returnpara">
                         <span class="d-lg-block">Today's Investment can give a return of more
                             than 105% in the
                             next two</span> years, which is a big
-                        commitment.
-                    </p>
+                        commitment.</p>
                     <img src="./assets/images/png/research_img.png" alt="research_img" class="w-100 research_img">
                 </div>
             </div>
@@ -800,620 +801,649 @@
                                         mirror the price and yield performance of the Index Artificial Intelligence &
                                         Big Data Index, excluding fees and expenses.</p>
 
-                                </div>
-                            </div>
-                        </div>
-                        <div class="d-md-none  pb-md-5 pb-4 mb-1 mb-md-5">
-                            <div class="row mt-5 px-1 px-sm-0 pt-1 pt-md-5">
-                                <div class="col-md-7 mt-xxl-4">
-                                    <div
-                                        class="d-flex justify-content-center bg-blue align-items-center number_rectangle_box">
-                                        <p class="text-xl color-white ff_opensans fw-bold">3</p>
-                                    </div>
-                                    <p
-                                        class="fw-normal ff_inter lh_160 text-xsm font_sm_14 color-extradark-grey mt-3 pt-1  max_w_560">
-                                        ROBT uses consumer technology to select the companies involved in Artificial
-                                        Intelligence or robotics. Then, the stocks will be ranked based on their level
-                                        of involvement in the industry.</p>
-                                    <p
-                                        class="fw-normal ff_inter lh_160 text-xsm font_sm_14 color-extradark-grey  max_w_560 ">
-                                        The stocks are mainly categorized into one of three categories: enhancers,
-                                        engagers, and enablers. Here, the engagers got 60% weight, enablers have 25%,
-                                        and 15% for enhancers. The index has been rebalanced quarterly and reconstituted
-                                        semi-annually</p>
-                                </div>
-                                <div class="col-md-5 mt-xxl-4">
-                                    <div class="d-flex justify-content-md-end">
-                                        <img src="./assets/images/png/top-3-ai-etfs.png" class="top_etf_img top_img_mr"
-                                            alt="graph">
                                     </div>
                                 </div>
                             </div>
-                            <div class="row mt-5 px-1 px-sm-0 pt-1 pt-md-5">
-                                <div class="col-md-5 mt-xxl-4">
-                                    <div class="d-flex justify-content-start">
-                                        <img src="./assets/images/png/top-4-ai-etfs.png" class="top_etf_img top_img_ml"
-                                            alt="graph">
-                                    </div>
-                                </div>
-                                <div class="col-md-7 order-first order-md-last  mt-xxl-4 d-flex justify-content-end">
-                                    <div class="d-flex flex-column">
+                            <div class="d-md-none  pb-md-5 pb-4 mb-1 mb-md-5">
+                                <div class="row mt-5 px-1 px-sm-0 pt-1 pt-md-5">
+                                    <div class="col-md-7 mt-xxl-4">
                                         <div
                                             class="d-flex justify-content-center bg-blue align-items-center number_rectangle_box">
-                                            <p class="text-xl color-white ff_opensans fw-bold">4</p>
+                                            <p class="text-xl color-white ff_opensans fw-bold">3</p>
+                                        </div>
+                                        <p
+                                            class="fw-normal ff_inter lh_160 text-xsm font_sm_14 color-extradark-grey mt-3 pt-1  max_w_560">
+                                            ROBT uses consumer technology to select the companies involved in Artificial
+                                            Intelligence or robotics. Then, the stocks will be ranked based on their
+                                            level
+                                            of involvement in the industry.</p>
+                                        <p
+                                            class="fw-normal ff_inter lh_160 text-xsm font_sm_14 color-extradark-grey  max_w_560 ">
+                                            The stocks are mainly categorized into one of three categories: enhancers,
+                                            engagers, and enablers. Here, the engagers got 60% weight, enablers have
+                                            25%,
+                                            and 15% for enhancers. The index has been rebalanced quarterly and
+                                            reconstituted
+                                            semi-annually</p>
+                                    </div>
+                                    <div class="col-md-5 mt-xxl-4">
+                                        <div class="d-flex justify-content-md-end">
+                                            <img src="./assets/images/png/top-3-ai-etfs.png"
+                                                class="top_etf_img top_img_mr" alt="graph">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-5 px-1 px-sm-0 pt-1 pt-md-5">
+                                    <div class="col-md-5 mt-xxl-4">
+                                        <div class="d-flex justify-content-start">
+                                            <img src="./assets/images/png/top-4-ai-etfs.png"
+                                                class="top_etf_img top_img_ml" alt="graph">
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="col-md-7 order-first order-md-last  mt-xxl-4 d-flex justify-content-end">
+                                        <div class="d-flex flex-column">
+                                            <div
+                                                class="d-flex justify-content-center bg-blue align-items-center number_rectangle_box">
+                                                <p class="text-xl color-white ff_opensans fw-bold">4</p>
+                                            </div>
+                                            <p
+                                                class="fw-normal ff_inter font_sm_14 lh_160 text-xsm color-extradark-grey mt-3 pt-1  max_w_560">
+                                                TECB This multisector ETF seeks the investment results of an index
+                                                composed
+                                                of US companies that could benefit from technologies such as AI and
+                                                robotics, cybersecurity, cloud and data tech, and financial technology.
+                                            </p>
+                                            <p
+                                                class="fw-normal ff_inter font_sm_14 lh_160 text-xsm color-extradark-grey max_w_560 ">
+                                                TECB always seeks long-term growth by accessing the companies at the
+                                                forefront of technology. There is a precise exposure to US stocks and
+                                                the
+                                                value chain of five themes, which believes in breakthroughs in the tech
+                                                industry.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-5 px-1 px-sm-0 pt-1 pt-md-5">
+                                    <div class="col-md-7 mt-xxl-4">
+                                        <div
+                                            class="d-flex justify-content-center bg-blue align-items-center number_rectangle_box">
+                                            <p class="text-xl color-white ff_opensans fw-bold">5</p>
                                         </div>
                                         <p
                                             class="fw-normal ff_inter font_sm_14 lh_160 text-xsm color-extradark-grey mt-3 pt-1  max_w_560">
-                                            TECB This multisector ETF seeks the investment results of an index composed
-                                            of US companies that could benefit from technologies such as AI and
-                                            robotics, cybersecurity, cloud and data tech, and financial technology.</p>
+                                            PNQI PNQI is mainly designed to track the performance of the companies
+                                            engaged
+                                            in Internet-related businesses related to the New York Stock Exchange. NYSE
+                                            American, and NASDAQ Stock Market.</p>
                                         <p
                                             class="fw-normal ff_inter font_sm_14 lh_160 text-xsm color-extradark-grey max_w_560 ">
-                                            TECB always seeks long-term growth by accessing the companies at the
-                                            forefront of technology. There is a precise exposure to US stocks and the
-                                            value chain of five themes, which believes in breakthroughs in the tech
-                                            industry.</p>
-
+                                            The fund will typically invest 90% of its total assets in the index's
+                                            securities. The companies in this index are related to Internet service but
+                                            not
+                                            limited to Internet software, search engines, web hosting, or website
+                                            design.
+                                        </p>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="row mt-5 px-1 px-sm-0 pt-1 pt-md-5">
-                                <div class="col-md-7 mt-xxl-4">
-                                    <div
-                                        class="d-flex justify-content-center bg-blue align-items-center number_rectangle_box">
-                                        <p class="text-xl color-white ff_opensans fw-bold">5</p>
-                                    </div>
-                                    <p
-                                        class="fw-normal ff_inter font_sm_14 lh_160 text-xsm color-extradark-grey mt-3 pt-1  max_w_560">
-                                        PNQI PNQI is mainly designed to track the performance of the companies engaged
-                                        in Internet-related businesses related to the New York Stock Exchange. NYSE
-                                        American, and NASDAQ Stock Market.</p>
-                                    <p
-                                        class="fw-normal ff_inter font_sm_14 lh_160 text-xsm color-extradark-grey max_w_560 ">
-                                        The fund will typically invest 90% of its total assets in the index's
-                                        securities. The companies in this index are related to Internet service but not
-                                        limited to Internet software, search engines, web hosting, or website design.
-                                    </p>
-                                </div>
-                                <div class="col-md-5 mt-xxl-4">
-                                    <div class="d-flex justify-content-md-end">
-                                        <img src="./assets/images/png/top-5-ai-etfs.png" class="top_etf_img top_img_mr"
-                                            alt="graph">
+                                    <div class="col-md-5 mt-xxl-4">
+                                        <div class="d-flex justify-content-md-end">
+                                            <img src="./assets/images/png/top-5-ai-etfs.png"
+                                                class="top_etf_img top_img_mr" alt="graph">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="custom_container d-none d-md-block container pb-md-5 pb-4 mb-1 mb-md-5">
-                <div class="row mt-5 px-2 px-sm-0 pt-1 pt-md-5">
-                    <div class="col-md-7 mt-xxl-4">
-                        <div class="d-flex justify-content-center bg-blue align-items-center number_rectangle_box">
-                            <p class="text-xl color-white ff_opensans fw-bold">3</p>
-                        </div>
-                        <p
-                            class="fw-normal ff_inter lh_160 text-xsm font_sm_14 color-extradark-grey mt-3 pt-1  max_w_560">
-                            ROBT uses consumer technology to select the companies involved in Artificial Intelligence or
-                            robotics. Then, the stocks will be ranked based on their level of involvement in the
-                            industry.</p>
-                        <p class="fw-normal ff_inter lh_160 text-xsm font_sm_14 color-extradark-grey  max_w_560 ">The
-                            stocks are mainly categorized into one of three categories: enhancers, engagers, and
-                            enablers. Here, the engagers got 60% weight, enablers have 25%, and 15% for enhancers. The
-                            index has been rebalanced quarterly and reconstituted semi-annually</p>
-                    </div>
-                    <div class="col-md-5 mt-xxl-4">
-                        <div class="d-flex justify-content-md-end">
-                            <img src="./assets/images/png/top-3-ai-etfs.png" class="top_etf_img top_img_mr" alt="graph">
-                        </div>
-                    </div>
-                </div>
-                <div class="row mt-5 px-2 px-sm-0 pt-1 pt-md-5">
-                    <div class="col-md-5 mt-xxl-4">
-                        <div class="d-flex justify-content-start">
-                            <img src="./assets/images/png/top-4-ai-etfs.png" class="top_etf_img top_img_ml" alt="graph">
-                        </div>
-                    </div>
-                    <div class="col-md-7 order-first order-md-last  mt-xxl-4 d-flex justify-content-end">
-                        <div class="d-flex flex-column">
+                <div class="custom_container d-none d-md-block container pb-md-5 pb-4 mb-1 mb-md-5">
+                    <div class="row mt-5 px-2 px-sm-0 pt-1 pt-md-5">
+                        <div class="col-md-7 mt-xxl-4">
                             <div class="d-flex justify-content-center bg-blue align-items-center number_rectangle_box">
-                                <p class="text-xl color-white ff_opensans fw-bold">4</p>
+                                <p class="text-xl color-white ff_opensans fw-bold">3</p>
+                            </div>
+                            <p
+                                class="fw-normal ff_inter lh_160 text-xsm font_sm_14 color-extradark-grey mt-3 pt-1  max_w_560">
+                                ROBT uses consumer technology to select the companies involved in Artificial
+                                Intelligence or
+                                robotics. Then, the stocks will be ranked based on their level of involvement in the
+                                industry.</p>
+                            <p class="fw-normal ff_inter lh_160 text-xsm font_sm_14 color-extradark-grey  max_w_560 ">
+                                The
+                                stocks are mainly categorized into one of three categories: enhancers, engagers, and
+                                enablers. Here, the engagers got 60% weight, enablers have 25%, and 15% for enhancers.
+                                The
+                                index has been rebalanced quarterly and reconstituted semi-annually</p>
+                        </div>
+                        <div class="col-md-5 mt-xxl-4">
+                            <div class="d-flex justify-content-md-end">
+                                <img src="./assets/images/png/top-3-ai-etfs.png" class="top_etf_img top_img_mr"
+                                    alt="graph">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-5 px-2 px-sm-0 pt-1 pt-md-5">
+                        <div class="col-md-5 mt-xxl-4">
+                            <div class="d-flex justify-content-start">
+                                <img src="./assets/images/png/top-4-ai-etfs.png" class="top_etf_img top_img_ml"
+                                    alt="graph">
+                            </div>
+                        </div>
+                        <div class="col-md-7 order-first order-md-last  mt-xxl-4 d-flex justify-content-end">
+                            <div class="d-flex flex-column">
+                                <div
+                                    class="d-flex justify-content-center bg-blue align-items-center number_rectangle_box">
+                                    <p class="text-xl color-white ff_opensans fw-bold">4</p>
+                                </div>
+                                <p
+                                    class="fw-normal ff_inter font_sm_14 lh_160 text-xsm color-extradark-grey mt-3 pt-1  max_w_560">
+                                    TECB This multisector ETF seeks the investment results of an index composed of US
+                                    companies that could benefit from technologies such as AI and robotics,
+                                    cybersecurity,
+                                    cloud and data tech, and financial technology.</p>
+                                <p
+                                    class="fw-normal ff_inter font_sm_14 lh_160 text-xsm color-extradark-grey max_w_560 ">
+                                    TECB always seeks long-term growth by accessing the companies at the forefront of
+                                    technology. There is a precise exposure to US stocks and the value chain of five
+                                    themes,
+                                    which believes in breakthroughs in the tech industry.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-5 px-2 px-sm-0 pt-1 pt-md-5">
+                        <div class="col-md-7 mt-xxl-4">
+                            <div class="d-flex justify-content-center bg-blue align-items-center number_rectangle_box">
+                                <p class="text-xl color-white ff_opensans fw-bold">5</p>
                             </div>
                             <p
                                 class="fw-normal ff_inter font_sm_14 lh_160 text-xsm color-extradark-grey mt-3 pt-1  max_w_560">
-                                TECB This multisector ETF seeks the investment results of an index composed of US
-                                companies that could benefit from technologies such as AI and robotics, cybersecurity,
-                                cloud and data tech, and financial technology.</p>
-                            <p class="fw-normal ff_inter font_sm_14 lh_160 text-xsm color-extradark-grey max_w_560 ">
-                                TECB always seeks long-term growth by accessing the companies at the forefront of
-                                technology. There is a precise exposure to US stocks and the value chain of five themes,
-                                which believes in breakthroughs in the tech industry.</p>
-
+                                PNQI PNQI is mainly designed to track the performance of the companies engaged in
+                                Internet-related businesses related to the New York Stock Exchange. NYSE American, and
+                                NASDAQ Stock Market.</p>
+                            <p class="fw-normal ff_inter font_sm_14 lh_160 text-xsm color-extradark-grey max_w_560 ">The
+                                fund will typically invest 90% of its total assets in the index's securities. The
+                                companies
+                                in this index are related to Internet service but not limited to Internet software,
+                                search
+                                engines, web hosting, or website design.</p>
                         </div>
-                    </div>
-                </div>
-                <div class="row mt-5 px-2 px-sm-0 pt-1 pt-md-5">
-                    <div class="col-md-7 mt-xxl-4">
-                        <div class="d-flex justify-content-center bg-blue align-items-center number_rectangle_box">
-                            <p class="text-xl color-white ff_opensans fw-bold">5</p>
-                        </div>
-                        <p
-                            class="fw-normal ff_inter font_sm_14 lh_160 text-xsm color-extradark-grey mt-3 pt-1  max_w_560">
-                            PNQI PNQI is mainly designed to track the performance of the companies engaged in
-                            Internet-related businesses related to the New York Stock Exchange. NYSE American, and
-                            NASDAQ Stock Market.</p>
-                        <p class="fw-normal ff_inter font_sm_14 lh_160 text-xsm color-extradark-grey max_w_560 ">The
-                            fund will typically invest 90% of its total assets in the index's securities. The companies
-                            in this index are related to Internet service but not limited to Internet software, search
-                            engines, web hosting, or website design.</p>
-                    </div>
-                    <div class="col-md-5 mt-xxl-4">
-                        <div class="d-flex justify-content-md-end">
-                            <img src="./assets/images/png/top-5-ai-etfs.png" class="top_etf_img top_img_mr" alt="graph">
+                        <div class="col-md-5 mt-xxl-4">
+                            <div class="d-flex justify-content-md-end">
+                                <img src="./assets/images/png/top-5-ai-etfs.png" class="top_etf_img top_img_mr"
+                                    alt="graph">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- ------- How it work ------------- -->
-        <div class="pb-5 pb-sm-0 pb-sm-4 pb-lg-5 overflow-hidden bg-white">
-            <div class="container px-3 custom_container">
-                <div class="mt-5 pt-lg-4 d-flex flex-column justify-content-center align-items-center">
-                    <h3 class="text-center fw-bold text-xl mb-3 pt-1 pt-md-2 color-dark-blue ff_opensans">
-                        How It Works
-                    </h3>
-                    <p class="text-center color-light-blue fw-normal text-sm mb-3 px-2 lh_160 ff_inter max_w_989">
-                        If you've used ChatGPT, the OpenAI chatbot that has wowed users by
-                        writing code and instantly answering complex questions, you've
-                        gotten a glimpse into the next frontier in artificial intelligence,
-                        as big tech companies are racing to develop the leading AI chatbot.
-                    </p>
-                    <p class="text-center color-light-blue fw-normal text-sm lh_160 px-2 px-lg-0 ff_inter max_w_989">
-                        If you want to get portfolio exposure to AI companies but don’t want
-                        to identify individual AI stocks, you can invest in an AI-focused
-                        exchange-traded fund(ETF). AI ETFs provide exposure to a board range
-                        of the best AI companies, eliminating the need to research and
-                        choose individual stocks on your own.
-                    </p>
+            <!-- ------- How it work ------------- -->
+            <div class="pb-5 pb-sm-0 pb-sm-4 pb-lg-5 overflow-hidden bg-white">
+                <div class="container px-3 custom_container">
+                    <div class="mt-5 pt-lg-4 d-flex flex-column justify-content-center align-items-center">
+                        <h3 class="text-center fw-bold text-xl mb-3 pt-1 pt-md-2 color-dark-blue ff_opensans">
+                            How It Works
+                        </h3>
+                        <p class="text-center color-light-blue fw-normal text-sm mb-3 px-2 lh_160 ff_inter max_w_989">
+                            If you've used ChatGPT, the OpenAI chatbot that has wowed users by
+                            writing code and instantly answering complex questions, you've
+                            gotten a glimpse into the next frontier in artificial intelligence,
+                            as big tech companies are racing to develop the leading AI chatbot.
+                        </p>
+                        <p
+                            class="text-center color-light-blue fw-normal text-sm lh_160 px-2 px-lg-0 ff_inter max_w_989">
+                            If you want to get portfolio exposure to AI companies but don’t want
+                            to identify individual AI stocks, you can invest in an AI-focused
+                            exchange-traded fund(ETF). AI ETFs provide exposure to a board range
+                            of the best AI companies, eliminating the need to research and
+                            choose individual stocks on your own.
+                        </p>
+                    </div>
+                    <div class="my-lg-5 mt-5 pt-4 py-lg-4 mb-2">
+                        <h3 class="text-center fw-bold text-xl px-5 px-sm-0 py-2 mb-4 color-dark-blue ff_opensans">
+                            You have to follow some steps
+                        </h3>
+                    </div>
+                    <div class="d-none d-lg-block ">
+                        <div class="row mb-5 pb-5 doted_line justify-content-center">
+                            <div class="col-4 col-xl-3">
+                                <div class="d-flex flex-column justify-content-center align-items-center">
+                                    <p
+                                        class="bg-blue fw-bold text-xl color-white d-flex justify-content-center align-items-center step_circle">
+                                        1
+                                    </p>
+                                    <div class="d-flex flex-column justify-content-center align-items-center">
+                                        <h4 class="text-black fw-bold text-sm ff_inter mt-4 pt-3 mb-3 text-center">
+                                            Sign Up
+                                        </h4>
+                                        <p class="lh_160 text-xsm fw-normal color-grey ff_inter mb-5 text-center pb-2">
+                                            Fill in the module
+                                        </p>
+                                        <button class="common_button fw-bold text-xsm color-white ff_inter">
+                                            Register now
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 col-xl-6 px-xxl-4">
+                                <div class="d-flex flex-column justify-content-center align-items-center">
+                                    <p
+                                        class="bg-blue fw-bold text-xl color-white d-flex justify-content-center align-items-center step_circle">
+                                        2
+                                    </p>
+                                    <div class="d-flex flex-column justify-content-center align-items-center">
+                                        <h4 class="text-black fw-bold text-sm ff_inter mt-4 pt-3 mb-3 text-center">
+                                            Verification
+                                        </h4>
+                                        <p
+                                            class="lh_160 text-xsm fw-normal color-grey ff_inter mb-xl-4 mb-2 pb-xl-2 px-xxl-5 mx-xl-5 text-center">
+                                            Complete the verfiaction of your account with ours
+                                            authorized representative
+                                        </p>
+                                        <button class="common_button fw-bold text-xsm color-white ff_inter">
+                                            Book a call
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 col-xl-3">
+                                <div class="d-flex flex-column justify-content-center align-items-center">
+                                    <p
+                                        class="bg-blue fw-bold text-xl color-white d-flex justify-content-center align-items-center step_circle">
+                                        3
+                                    </p>
+                                    <div class="d-flex flex-column justify-content-center align-items-center">
+                                        <h4 class="text-black fw-bold text-sm ff_inter mt-4 pt-3 mb-3 text-center">
+                                            Investing
+                                        </h4>
+                                        <p
+                                            class="lh_160 text-xsm fw-normal color-grey ff_inter mb-4 px-xxl-4 pb-2 text-center">
+                                            Start investibg on your financiak future
+                                        </p>
+                                        <button class="common_button fw-bold text-xsm color-white ff_inter">
+                                            Open your account
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="my-lg-5 mt-5 pt-4 py-lg-4 mb-2">
-                    <h3 class="text-center fw-bold text-xl px-5 px-sm-0 py-2 mb-4 color-dark-blue ff_opensans">
-                        You have to follow some steps
-                    </h3>
-                </div>
-                <div class="d-none d-lg-block ">
-                    <div class="row mb-5 pb-5 doted_line justify-content-center">
-                        <div class="col-4 col-xl-3">
-                            <div class="d-flex flex-column justify-content-center align-items-center">
+                <!-- ------ slider ------ -->
+                <div class="pb-4">
+                    <div id="work_slider"
+                        class="work_slider px-sm-2 row mb-3 pb-5 d-lg-none justify-content-center align-items-center">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <div class="d-flex flex-column justify-content-center step_slider_box align-items-center">
                                 <p
-                                    class="bg-blue fw-bold text-xl color-white d-flex justify-content-center align-items-center step_circle">
+                                    class="bg-blue fw-bold text-xl color-blue d-flex justify-content-center align-items-center step_circle">
                                     1
                                 </p>
                                 <div class="d-flex flex-column justify-content-center align-items-center">
-                                    <h4 class="text-black fw-bold text-sm ff_inter mt-4 pt-3 mb-3 text-center">
+                                    <h4 class="text-white fw-bold text-sm ff_inter mt-4 mb-3 text-center">
                                         Sign Up
                                     </h4>
-                                    <p class="lh_160 text-xsm fw-normal color-grey ff_inter mb-5 text-center pb-2">
+                                    <p
+                                        class="lh_160 text-xsm fw-normal color-extralight-blue ff_inter mb-4 text-center pb-2">
                                         Fill in the module
                                     </p>
-                                    <button class="common_button fw-bold text-xsm color-white ff_inter">
+                                    <button
+                                        class="common_button fw-bold bg-transparent shadow-none text-xsm color-white ff_inter">
                                         Register now
                                     </button>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4 col-xl-6 px-xxl-4">
-                            <div class="d-flex flex-column justify-content-center align-items-center">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <div class="d-flex flex-column justify-content-center step_slider_box align-items-center">
                                 <p
-                                    class="bg-blue fw-bold text-xl color-white d-flex justify-content-center align-items-center step_circle">
+                                    class="bg-blue fw-bold text-xl color-blue d-flex justify-content-center align-items-center step_circle">
                                     2
                                 </p>
                                 <div class="d-flex flex-column justify-content-center align-items-center">
-                                    <h4 class="text-black fw-bold text-sm ff_inter mt-4 pt-3 mb-3 text-center">
+                                    <h4 class="text-white fw-bold text-sm ff_inter mt-2 mb-1 text-center">
                                         Verification
                                     </h4>
                                     <p
-                                        class="lh_160 text-xsm fw-normal color-grey ff_inter mb-xl-4 mb-2 pb-xl-2 px-xxl-5 mx-xl-5 text-center">
-                                        Complete the verfiaction of your account with ours
-                                        authorized representative
+                                        class="lh_160 text-xsm fw-normal color-extralight-blue ff_inter mb-3 text-center">
+                                        Complete the verfiaction of your account with ours authorized
+                                        representative
                                     </p>
-                                    <button class="common_button fw-bold text-xsm color-white ff_inter">
+                                    <button
+                                        class="common_button fw-bold bg-transparent shadow-none text-xsm color-white ff_inter">
                                         Book a call
                                     </button>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4 col-xl-3">
-                            <div class="d-flex flex-column justify-content-center align-items-center">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <div class="d-flex flex-column justify-content-center step_slider_box align-items-center">
                                 <p
-                                    class="bg-blue fw-bold text-xl color-white d-flex justify-content-center align-items-center step_circle">
+                                    class="bg-blue fw-bold text-xl color-blue d-flex justify-content-center align-items-center step_circle">
                                     3
                                 </p>
                                 <div class="d-flex flex-column justify-content-center align-items-center">
-                                    <h4 class="text-black fw-bold text-sm ff_inter mt-4 pt-3 mb-3 text-center">
+                                    <h4 class="text-white fw-bold text-sm ff_inter mt-3 mb-2 text-center">
                                         Investing
                                     </h4>
                                     <p
-                                        class="lh_160 text-xsm fw-normal color-grey ff_inter mb-4 px-xxl-4 pb-2 text-center">
+                                        class="lh_160 text-xsm fw-normal color-extralight-blue ff_inter mb-4 pb-2 text-center">
                                         Start investibg on your financiak future
                                     </p>
-                                    <button class="common_button fw-bold text-xsm color-white ff_inter">
+                                    <button
+                                        class="common_button fw-bold bg-transparent shadow-none text-xsm color-white ff_inter">
                                         Open your account
                                     </button>
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
-            <!-- ------ slider ------ -->
-            <div class="pb-4">
-                <div id="work_slider"
-                    class="work_slider px-sm-2 row mb-3 pb-5 d-lg-none justify-content-center align-items-center">
-                    <div class="d-flex justify-content-center align-items-center">
-                        <div class="d-flex flex-column justify-content-center step_slider_box align-items-center">
-                            <p
-                                class="bg-blue fw-bold text-xl color-blue d-flex justify-content-center align-items-center step_circle">
-                                1
-                            </p>
-                            <div class="d-flex flex-column justify-content-center align-items-center">
-                                <h4 class="text-white fw-bold text-sm ff_inter mt-4 mb-3 text-center">
-                                    Sign Up
-                                </h4>
-                                <p
-                                    class="lh_160 text-xsm fw-normal color-extralight-blue ff_inter mb-4 text-center pb-2">
-                                    Fill in the module
-                                </p>
-                                <button
-                                    class="common_button fw-bold bg-transparent shadow-none text-xsm color-white ff_inter">
-                                    Register now
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-flex justify-content-center align-items-center">
-                        <div class="d-flex flex-column justify-content-center step_slider_box align-items-center">
-                            <p
-                                class="bg-blue fw-bold text-xl color-blue d-flex justify-content-center align-items-center step_circle">
-                                2
-                            </p>
-                            <div class="d-flex flex-column justify-content-center align-items-center">
-                                <h4 class="text-white fw-bold text-sm ff_inter mt-2 mb-1 text-center">
-                                    Verification
-                                </h4>
-                                <p class="lh_160 text-xsm fw-normal color-extralight-blue ff_inter mb-3 text-center">
-                                    Complete the verfiaction of your account with ours authorized
-                                    representative
-                                </p>
-                                <button
-                                    class="common_button fw-bold bg-transparent shadow-none text-xsm color-white ff_inter">
-                                    Book a call
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-flex justify-content-center align-items-center">
-                        <div class="d-flex flex-column justify-content-center step_slider_box align-items-center">
-                            <p
-                                class="bg-blue fw-bold text-xl color-blue d-flex justify-content-center align-items-center step_circle">
-                                3
-                            </p>
-                            <div class="d-flex flex-column justify-content-center align-items-center">
-                                <h4 class="text-white fw-bold text-sm ff_inter mt-3 mb-2 text-center">
-                                    Investing
-                                </h4>
-                                <p
-                                    class="lh_160 text-xsm fw-normal color-extralight-blue ff_inter mb-4 pb-2 text-center">
-                                    Start investibg on your financiak future
-                                </p>
-                                <button
-                                    class="common_button fw-bold bg-transparent shadow-none text-xsm color-white ff_inter">
-                                    Open your account
-                                </button>
-                            </div>
-                        </div>
+
+            <!-- ------- Advisors   ----- -->
+            <div class="bg_color advisors_sm_bg bg_half_circle pb-4">
+                <div class="container px-3 custom_container pb-5">
+                    <div class="d-flex justify-content-center mb-5 align-items-center flex-column">
+                        <h3 class="text-center pt_211 mb-3 fw-bold text-xl color-white ff_opensans">
+                            Advisors
+                        </h3>
+                        <p class="text-center color-light-grey fw-normal text-sm px-2 lh_160 ff_inter max_w_758">
+                            QuantumAI has wide support among investors. Among them are the
+                            brightest scientists, businessmen and engineers
+                        </p>
                     </div>
 
-                </div>
-            </div>
-        </div>
-
-        <!-- ------- Advisors   ----- -->
-        <div class="bg_color advisors_sm_bg bg_half_circle pb-4">
-            <div class="container px-3 custom_container pb-5">
-                <div class="d-flex justify-content-center mb-5 align-items-center flex-column">
-                    <h3 class="text-center pt_211 mb-3 fw-bold text-xl color-white ff_opensans">
-                        Advisors
-                    </h3>
-                    <p class="text-center color-light-grey fw-normal text-sm px-2 lh_160 ff_inter max_w_758">
-                        QuantumAI has wide support among investors. Among them are the
-                        brightest scientists, businessmen and engineers
-                    </p>
-                </div>
-
-                <div id="advisors" class="advisors row pb-5">
-                    <div class="col-4 d-flex justify-content-center px-1 px-xxl-3">
-                        <div class="advisors_box position-relative px-1">
-                            <div class="blur_circle position-absolute"></div>
-                            <img src="./assets/images/png/jeff-benos.png" alt="jeff" class="w-100 jeff_img" />
-                            <h4 class="mt-4 color-white fw-bold ff_inter mb-1 text-center text-sm">
-                                Jeff Bezos
-                            </h4>
-                            <p
-                                class="text-center pb-4 color-light-grey fw-normal text-xsm px-5 px-sm-2 px-xxl-5 px-2 lh_160 ff_inter max_w_758">
-                                Technology Entrepreneur, Investor, And Philanthropist
-                            </p>
-                            <div class="about_advisors">
-                                <h4 class="color-white fw-bold ff_inter mb-1 text-sm">
+                    <div id="advisors" class="advisors row pb-5">
+                        <div class="col-4 d-flex justify-content-center px-1 px-xxl-3">
+                            <div class="advisors_box position-relative px-1">
+                                <div class="blur_circle position-absolute"></div>
+                                <img src="./assets/images/png/jeff-benos.png" alt="jeff" class="w-100 jeff_img" />
+                                <h4 class="mt-4 color-white fw-bold ff_inter mb-1 text-center text-sm">
                                     Jeff Bezos
                                 </h4>
                                 <p
-                                    class="mb-3 fw-normal ff_inter lh_160 text-xsm text-capitalize color-extralight-white">
-                                    Business magnate, investor, author, philanthropist, and
-                                    humanitarian
+                                    class="text-center pb-4 color-light-grey fw-normal text-xsm px-5 px-sm-2 px-xxl-5 px-2 lh_160 ff_inter max_w_758">
+                                    Technology Entrepreneur, Investor, And Philanthropist
                                 </p>
-                                <p
-                                    class="mb-3 fw-normal ff_inter lh_160 text-xsm text-capitalize color-extralight-white">
-                                    I know for a fact Elon has spent $3 billion of his own money
-                                    to fund this program. Hats off to him for that - that's $3
-                                    billion of his own money to fund a better future for
-                                    everyone, and to help others make profits that'll help him
-                                    do so! It's a win-win, and I'm very excited to see where it
-                                    goes.
-                                </p>
+                                <div class="about_advisors">
+                                    <h4 class="color-white fw-bold ff_inter mb-1 text-sm">
+                                        Jeff Bezos
+                                    </h4>
+                                    <p
+                                        class="mb-3 fw-normal ff_inter lh_160 text-xsm text-capitalize color-extralight-white">
+                                        Business magnate, investor, author, philanthropist, and
+                                        humanitarian
+                                    </p>
+                                    <p
+                                        class="mb-3 fw-normal ff_inter lh_160 text-xsm text-capitalize color-extralight-white">
+                                        I know for a fact Elon has spent $3 billion of his own money
+                                        to fund this program. Hats off to him for that - that's $3
+                                        billion of his own money to fund a better future for
+                                        everyone, and to help others make profits that'll help him
+                                        do so! It's a win-win, and I'm very excited to see where it
+                                        goes.
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-4 d-flex justify-content-center px-1 px-xxl-3">
-                        <div class="advisors_box position-relative px-1">
-                            <div class="blur_circle position-absolute"></div>
-                            <img src="./assets/images/png/jeff-benos.png" alt="jeff" class="w-100 jeff_img" />
-                            <h4 class="mt-4 color-white fw-bold ff_inter mb-1 text-center text-sm">
-                                Bill Gates
-                            </h4>
-                            <p
-                                class="text-center pb-4 color-light-grey fw-normal text-xsm px-5 px-sm-2 px-xxl-5 px-2 lh_160 ff_inter max_w_758">
-                                Technology Entrepreneur, Investor, And Philanthropist
-                            </p>
-                            <div class="about_advisors">
-                                <h4 class="color-white fw-bold ff_inter mb-1 text-sm">
+                        <div class="col-4 d-flex justify-content-center px-1 px-xxl-3">
+                            <div class="advisors_box position-relative px-1">
+                                <div class="blur_circle position-absolute"></div>
+                                <img src="./assets/images/png/jeff-benos.png" alt="jeff" class="w-100 jeff_img" />
+                                <h4 class="mt-4 color-white fw-bold ff_inter mb-1 text-center text-sm">
                                     Bill Gates
                                 </h4>
                                 <p
-                                    class="mb-3 fw-normal ff_inter lh_160 text-xsm text-capitalize color-extralight-white">
-                                    Business magnate, investor, author, philanthropist, and
-                                    humanitarian
+                                    class="text-center pb-4 color-light-grey fw-normal text-xsm px-5 px-sm-2 px-xxl-5 px-2 lh_160 ff_inter max_w_758">
+                                    Technology Entrepreneur, Investor, And Philanthropist
                                 </p>
-                                <p
-                                    class="mb-3 fw-normal ff_inter lh_160 text-xsm text-capitalize color-extralight-white">
-                                    I know for a fact Elon has spent $3 billion of his own money
-                                    to fund this program. Hats off to him for that - that's $3
-                                    billion of his own money to fund a better future for
-                                    everyone, and to help others make profits that'll help him
-                                    do so! It's a win-win, and I'm very excited to see where it
-                                    goes.
-                                </p>
+                                <div class="about_advisors">
+                                    <h4 class="color-white fw-bold ff_inter mb-1 text-sm">
+                                        Bill Gates
+                                    </h4>
+                                    <p
+                                        class="mb-3 fw-normal ff_inter lh_160 text-xsm text-capitalize color-extralight-white">
+                                        Business magnate, investor, author, philanthropist, and
+                                        humanitarian
+                                    </p>
+                                    <p
+                                        class="mb-3 fw-normal ff_inter lh_160 text-xsm text-capitalize color-extralight-white">
+                                        I know for a fact Elon has spent $3 billion of his own money
+                                        to fund this program. Hats off to him for that - that's $3
+                                        billion of his own money to fund a better future for
+                                        everyone, and to help others make profits that'll help him
+                                        do so! It's a win-win, and I'm very excited to see where it
+                                        goes.
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-4 d-flex justify-content-center px-1 px-xxl-3">
-                        <div class="advisors_box position-relative px-1">
-                            <div class="blur_circle position-absolute"></div>
-                            <img src="./assets/images/png/keith-rupert.png" alt="Keith Rupert Murdoch"
-                                class="w-100 jeff_img" />
-                            <h4 class="mt-4 color-white fw-bold ff_inter mb-1 text-center text-sm">
-                                Keith Rupert Murdoch
-                            </h4>
-                            <p
-                                class="text-center pb-4 color-light-grey fw-normal text-xsm px-2 px-2 lh_160 ff_inter max_w_758">
-                                Australian and American entrepreneur, media tycoon, and owner
-                                of media
-                            </p>
-
-                            <div class="about_advisors">
-                                <h4 class="color-white fw-bold ff_inter mb-1 text-sm">
+                        <div class="col-4 d-flex justify-content-center px-1 px-xxl-3">
+                            <div class="advisors_box position-relative px-1">
+                                <div class="blur_circle position-absolute"></div>
+                                <img src="./assets/images/png/keith-rupert.png" alt="Keith Rupert Murdoch"
+                                    class="w-100 jeff_img" />
+                                <h4 class="mt-4 color-white fw-bold ff_inter mb-1 text-center text-sm">
                                     Keith Rupert Murdoch
                                 </h4>
                                 <p
-                                    class="mb-3 fw-normal ff_inter lh_160 text-xsm text-capitalize color-extralight-white">
-                                    Business magnate, investor, author, philanthropist, and
-                                    humanitarian
+                                    class="text-center pb-4 color-light-grey fw-normal text-xsm px-2 px-2 lh_160 ff_inter max_w_758">
+                                    Australian and American entrepreneur, media tycoon, and owner
+                                    of media
                                 </p>
-                                <p
-                                    class="mb-3 fw-normal ff_inter lh_160 text-xsm text-capitalize color-extralight-white">
-                                    I know for a fact Elon has spent $3 billion of his own money
-                                    to fund this program. Hats off to him for that - that's $3
-                                    billion of his own money to fund a better future for
-                                    everyone, and to help others make profits that'll help him
-                                    do so! It's a win-win, and I'm very excited to see where it
-                                    goes.
-                                </p>
+
+                                <div class="about_advisors">
+                                    <h4 class="color-white fw-bold ff_inter mb-1 text-sm">
+                                        Keith Rupert Murdoch
+                                    </h4>
+                                    <p
+                                        class="mb-3 fw-normal ff_inter lh_160 text-xsm text-capitalize color-extralight-white">
+                                        Business magnate, investor, author, philanthropist, and
+                                        humanitarian
+                                    </p>
+                                    <p
+                                        class="mb-3 fw-normal ff_inter lh_160 text-xsm text-capitalize color-extralight-white">
+                                        I know for a fact Elon has spent $3 billion of his own money
+                                        to fund this program. Hats off to him for that - that's $3
+                                        billion of his own money to fund a better future for
+                                        everyone, and to help others make profits that'll help him
+                                        do so! It's a win-win, and I'm very excited to see where it
+                                        goes.
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-4  d-flex justify-content-center  px-1 px-xxl-3">
-                        <div class="advisors_box position-relative px-1">
-                            <div class="blur_circle position-absolute"></div>
-                            <img src="./assets/images/png/keith-rupert.png" alt="Keith Rupert Murdoch"
-                                class="w-100 jeff_img" />
-                            <h4 class="mt-4 color-white fw-bold ff_inter mb-1 text-center text-sm">
-                                Keith Rupert Murdoch
-                            </h4>
-                            <p
-                                class="text-center pb-4 color-light-grey fw-normal text-xsm px-2 px-2 lh_160 ff_inter max_w_758">
-                                Australian and American entrepreneur, media tycoon, and owner
-                                of media
-                            </p>
-
-                            <div class="about_advisors">
-                                <h4 class="color-white fw-bold ff_inter mb-1 text-sm">
+                        <div class="col-4  d-flex justify-content-center  px-1 px-xxl-3">
+                            <div class="advisors_box position-relative px-1">
+                                <div class="blur_circle position-absolute"></div>
+                                <img src="./assets/images/png/keith-rupert.png" alt="Keith Rupert Murdoch"
+                                    class="w-100 jeff_img" />
+                                <h4 class="mt-4 color-white fw-bold ff_inter mb-1 text-center text-sm">
                                     Keith Rupert Murdoch
                                 </h4>
                                 <p
-                                    class="mb-3 fw-normal ff_inter lh_160 text-xsm text-capitalize color-extralight-white">
-                                    Business magnate, investor, author, philanthropist, and
-                                    humanitarian
+                                    class="text-center pb-4 color-light-grey fw-normal text-xsm px-2 px-2 lh_160 ff_inter max_w_758">
+                                    Australian and American entrepreneur, media tycoon, and owner
+                                    of media
                                 </p>
-                                <p
-                                    class="mb-3 fw-normal ff_inter lh_160 text-xsm text-capitalize color-extralight-white">
-                                    I know for a fact Elon has spent $3 billion of his own money
-                                    to fund this program. Hats off to him for that - that's $3
-                                    billion of his own money to fund a better future for
-                                    everyone, and to help others make profits that'll help him
-                                    do so! It's a win-win, and I'm very excited to see where it
-                                    goes.
-                                </p>
+
+                                <div class="about_advisors">
+                                    <h4 class="color-white fw-bold ff_inter mb-1 text-sm">
+                                        Keith Rupert Murdoch
+                                    </h4>
+                                    <p
+                                        class="mb-3 fw-normal ff_inter lh_160 text-xsm text-capitalize color-extralight-white">
+                                        Business magnate, investor, author, philanthropist, and
+                                        humanitarian
+                                    </p>
+                                    <p
+                                        class="mb-3 fw-normal ff_inter lh_160 text-xsm text-capitalize color-extralight-white">
+                                        I know for a fact Elon has spent $3 billion of his own money
+                                        to fund this program. Hats off to him for that - that's $3
+                                        billion of his own money to fund a better future for
+                                        everyone, and to help others make profits that'll help him
+                                        do so! It's a win-win, and I'm very excited to see where it
+                                        goes.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
-
             </div>
-        </div>
 
-        <!-- --------- STATISTICS FOR TODAY --------- -->
-        <div class="bg_grey overflow-hidden position-relative">
-            <div class="blur_cirle statics_ellips"></div>
-            <div class="md-container mx-auto container_width px-sm-3 pb-4 custom_container pt-sm-5">
-                <h3 class="text-center fw-bold text-xl color-dark-blue statics_heading ff_opensans">
-                    Statistics For <span class="color-blue">Today</span></h3>
-                <div class="statistics_bg d-flex flex-column align-items-start"></div>
-                <div id="statics_slider" class="row statics_slider px-lg-5 mx-xxl-5">
-                    <div class="col-4 d-flex flex-column justify-content-center align-items-center">
-                        <h4 class="text-center fw-bold text-xxl color-dark-blue mb-5 ff_opensans">757$</h4>
-                        <p class="color-light-purple lh_160 fw-normal text-xsm text-center max_w_278">Average Earnings
-                            Af a Registered User From A Deposit Of $250</p>
-                    </div>
-                    <div class="col-4 d-flex flex-column justify-content-center align-items-center">
-                        <h4 class="text-center fw-bold text-xxl color-dark-blue mb-5 ff_opensans">128$</h4>
-                        <p class="color-light-purple lh_160 fw-normal text-xsm text-center max_w_278">Average
-                            Registrations per day</p>
-                    </div>
-                    <div class="col-4 d-flex flex-column justify-content-center align-items-center">
-                        <h4 class="text-center fw-bold text-xxl color-dark-blue mb-5 ff_opensans">4x</h4>
-                        <p class="color-light-purple lh_160 fw-normal text-xsm text-center max_w_278">The Average
-                            Earnings Increase</p>
-                    </div>
-                </div>
-                <p class="text-sm text-center fw-bold ff_inter register_text color-dark-blue">Places left to register:
-                    <span class="color-blue"> 1</span>
-                </p>
-
-            </div>
-        </div>
-
-        <!-- -------  Register today   ------ -->
-        <div class="custom_container container pb-sm-4 pt-2 pt-sm-5 px-3">
-            <div class="d-flex justify-content-center align-items-center">
-                <h3 class="text-center fw-bold text-xl color-white mb-sm-5 py-5 max_w_758 ff_opensans">
-                    Register Today And
-                    <span class="color-blue">Grab Your First Profit!</span>
-                </h3>
-            </div>
-            <div class="row mb-lg-5 pb-lg-5">
-                <div class="col-lg-5">
-                    <div class="register_form pt-1">
-                        <h5
-                            class="fw-bold ff_opensans d-sm-none form_heading_font color-white text-center pt-4 mb-2 px-3">
-                            Sign Up For Free</h5>
-                        <h5
-                            class="fw-bold ff_opensans d-none d-sm-block text-lg color-white text-center pt-4 mb-3 px-3">
-                            Dominate the markets with AI ETFs</h5>
-                        <p class="ff_inter text-sm lh_160 fw-normal px-2 color-extralight-white text-center">In a matter
-                            of minutes one of our AI mentors will contact you, No Experience Required!</p>
-                        <form class="register_form_padding mb-4 mb-sm-0 d-flex flex-column" id="myForm"
-                            onsubmit="return validateForm()">
-                            <input placeholder="First Name" type="text" id="firstname" name="firstname"
-                                class="ff_inter fw-normal text-xsm color-light-black text-capitalize lh_116 w-100 mb-2 mb-sm-3">
-                            <div id="firstnameError" class="error"></div>
-                            <input placeholder="Last Name" type="text" id="lastname" name="lastname"
-                                class="ff_inter fw-normal text-xsm color-light-black text-capitalize lh_116 w-100 mt-sm-1 mb-2 mb-sm-3">
-                            <div id="lastnameError" class="error"></div>
-                            <input placeholder="Email" type="email" id="email" name="email"
-                                class="ff_inter fw-normal text-xsm color-light-black text-capitalize lh_116 w-100 mt-sm-1 mb-2 mb-sm-3">
-                            <div id="emailError" class="error"></div>
-                            <input placeholder="Phone Number" type="tel" id="phone" name="phone"
-                                class="ff_inter fw-normal text-xsm color-light-black text-capitalize lh_116 w-100 mt-sm-1  mb-3">
-                            <div id="phoneError" class="error"></div>
-                            <input type="submit" value="SIGN UP"
-                                class="w-100 text-center mt-1 text-white ff_inter fw-bold text-xsm lh_116">
-                        </form>
-                    </div>
-                </div>
-                <div class="col-lg-7">
-                    <div class="john_doe_card d-sm-none bg-white mt-5 ">
-                        <div class="d-flex align-items-center">
-                            <img src="./assets/images/png/john-doe-ellips.png" class="john_doe_img" alt="john doe">
-                            <div class="d-flex flex-column ms-3">
-                                <h3 class="ff_inter text-sm fw-bold color-black mb-1 ff_inter">John Doe</h3>
-                                <p class="lh_160 text-xsm color-dark-grey ff_inter">Founder & CEO</p>
-                            </div>
+            <!-- --------- STATISTICS FOR TODAY --------- -->
+            <div class="bg_grey overflow-hidden position-relative">
+                <div class="blur_cirle statics_ellips"></div>
+                <div class="md-container mx-auto container_width px-sm-3 pb-4 custom_container pt-sm-5">
+                    <h3 class="text-center fw-bold text-xl color-dark-blue statics_heading ff_opensans">
+                        Statistics For <span class="color-blue">Today</span></h3>
+                    <div class="statistics_bg d-flex flex-column align-items-start"></div>
+                    <div id="statics_slider" class="row statics_slider px-lg-5 mx-xxl-5">
+                        <div class="col-4 d-flex flex-column justify-content-center align-items-center">
+                            <h4 class="text-center fw-bold text-xxl color-dark-blue mb-5 ff_opensans">757$</h4>
+                            <p class="color-light-purple lh_160 fw-normal text-xsm text-center max_w_278">Average
+                                Earnings
+                                Af a Registered User From A Deposit Of $250</p>
                         </div>
-                        <img src="./assets/images/svg/5-stars.svg" alt="stars" class="my-3 pt-1">
-                        <p class="lh_160 font-xsm color-dark-grey ff_inter pe-4">I couldn't believe it until I saw my
-                            first income with AI ETFs</p>
-
+                        <div class="col-4 d-flex flex-column justify-content-center align-items-center">
+                            <h4 class="text-center fw-bold text-xxl color-dark-blue mb-5 ff_opensans">128$</h4>
+                            <p class="color-light-purple lh_160 fw-normal text-xsm text-center max_w_278">Average
+                                Registrations per day</p>
+                        </div>
+                        <div class="col-4 d-flex flex-column justify-content-center align-items-center">
+                            <h4 class="text-center fw-bold text-xxl color-dark-blue mb-5 ff_opensans">4x</h4>
+                            <p class="color-light-purple lh_160 fw-normal text-xsm text-center max_w_278">The Average
+                                Earnings Increase</p>
+                        </div>
                     </div>
-                    <div class="d-none d-sm-block"> <img src="./assets/images/png/ellips-group-img.png"
-                            class="group_ellips mt-5 mt-lg-0 w-100" alt="ellips"></div>
+                    <p class="text-sm text-center fw-bold ff_inter register_text color-dark-blue">Places left to
+                        register:
+                        <span class="color-blue"> 1</span>
+                    </p>
+
                 </div>
             </div>
-        </div>
 
-        <!-- ---------- Footer --------- -->
-        <div class="fotter_bg d-flex justify-content-center align-items-center flex-column">
-            <div class=" mt-5 pt-4 d-flex justify-content-center flex-column align-items-center">
-                <a href="">
-                    <h3 class="ff_orbitron fw-bold color-white text-center text-xlg mb-4 mt-5 "><span
-                            class="color-blue">AI</span> ETF</h3>
-                </a>
-                <p class="text-center fw-normal ff_inter lh_160 text-xsm color-extralight-grey px-2 px-sm-0 max_w_373">
-                    Lorem ipsum dolor sit amet consectetur. Viverra ut sed volutpat enim. .</p>
-                <div class="d-flex mt-4 pt-2 gap_14">
-                    <a href="https://www.facebook.com/" target="_blank"><img src="./assets/images/svg/facbook-icon.svg"
-                            class="footer_icons" alt="facebook"></a>
-                    <a href="https://www.instagram.com/accounts/login/" target="_blank"><img
-                            src="./assets/images/svg/instagram-icon.svg" class="footer_icons" alt="instagram"></a>
-                    <a href="https://www.facebook.com/" target="_blank"><img src="./assets/images/svg/telegram-icon.svg"
-                            class="footer_icons" alt="telegram"></a>
+            <!-- -------  Register today   ------ -->
+            <div class="custom_container container pb-sm-4 pt-2 pt-sm-5 px-3">
+                <div class="d-flex justify-content-center align-items-center">
+                    <h3 class="text-center fw-bold text-xl color-white mb-sm-5 py-5 max_w_758 ff_opensans">
+                        Register Today And
+                        <span class="color-blue">Grab Your First Profit!</span>
+                    </h3>
+                </div>
+                <div class="row mb-lg-5 pb-lg-5">
+                    <div class="col-lg-5">
+                        <div class="register_form pt-1">
+                            <h5
+                                class="fw-bold ff_opensans d-sm-none form_heading_font color-white text-center pt-4 mb-2 px-3">
+                                Sign Up For Free</h5>
+                            <h5
+                                class="fw-bold ff_opensans d-none d-sm-block text-lg color-white text-center pt-4 mb-3 px-3">
+                                Dominate the markets with AI ETFs</h5>
+                            <p class="ff_inter text-sm lh_160 fw-normal px-2 color-extralight-white text-center">In a
+                                matter
+                                of minutes one of our AI mentors will contact you, No Experience Required!</p>
+                            <form class="register_form_padding mb-4 mb-sm-0 d-flex flex-column" id="myForm"
+                                onsubmit="return validateForm()">
+                                <input placeholder="First Name" type="text" id="firstname" name="firstname"
+                                    class="ff_inter fw-normal text-xsm color-light-black text-capitalize lh_116 w-100 mb-2 mb-sm-3">
+                                <div id="firstnameError" class="error"></div>
+                                <input placeholder="Last Name" type="text" id="lastname" name="lastname"
+                                    class="ff_inter fw-normal text-xsm color-light-black text-capitalize lh_116 w-100 mt-sm-1 mb-2 mb-sm-3">
+                                <div id="lastnameError" class="error"></div>
+                                <input placeholder="Email" type="email" id="email" name="email"
+                                    class="ff_inter fw-normal text-xsm color-light-black text-capitalize lh_116 w-100 mt-sm-1 mb-2 mb-sm-3">
+                                <div id="emailError" class="error"></div>
+                                <input placeholder="Phone Number" type="tel" id="phone" name="phone"
+                                    class="ff_inter fw-normal text-xsm color-light-black text-capitalize lh_116 w-100 mt-sm-1  mb-3">
+                                <div id="phoneError" class="error"></div>
+                                <input type="submit" value="SIGN UP"
+                                    class="w-100 text-center mt-1 text-white ff_inter fw-bold text-xsm lh_116">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="john_doe_card d-sm-none bg-white mt-5 ">
+                            <div class="d-flex align-items-center">
+                                <img src="./assets/images/png/john-doe-ellips.png" class="john_doe_img" alt="john doe">
+                                <div class="d-flex flex-column ms-3">
+                                    <h3 class="ff_inter text-sm fw-bold color-black mb-1 ff_inter">John Doe</h3>
+                                    <p class="lh_160 text-xsm color-dark-grey ff_inter">Founder & CEO</p>
+                                </div>
+                            </div>
+                            <img src="./assets/images/svg/5-stars.svg" alt="stars" class="my-3 pt-1">
+                            <p class="lh_160 font-xsm color-dark-grey ff_inter pe-4">I couldn't believe it until I saw
+                                my
+                                first income with AI ETFs</p>
+
+                        </div>
+                        <div class="d-none d-sm-block"> <img src="./assets/images/png/ellips-group-img.png"
+                                class="group_ellips mt-5 mt-lg-0 w-100" alt="ellips"></div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <p class="py-1 bg-blue text-center ff_inter text-xs fw-normal color-extralight-white">Privacy
-            Policy | Conditions | Report Abuse/ Spam</p>
-        <div class="logo_slider mx-auto ps-4 d-flex justify-content-between py_40 bg-white px-3">
-            <div class="col-3 d-flex justify-content-center">
-                <a href=""><img src="./assets/images/svg/open-ai-logo.svg" class=" logos_img" alt="open ai">
-                </a>
+
+            <!-- ---------- Footer --------- -->
+            <div class="fotter_bg d-flex justify-content-center align-items-center flex-column">
+                <div class=" mt-5 pt-4 d-flex justify-content-center flex-column align-items-center">
+                    <a href="">
+                        <h3 class="ff_orbitron fw-bold color-white text-center text-xlg mb-4 mt-5 "><span
+                                class="color-blue">AI</span> ETF</h3>
+                    </a>
+                    <p
+                        class="text-center fw-normal ff_inter lh_160 text-xsm color-extralight-grey px-2 px-sm-0 max_w_373">
+                        Lorem ipsum dolor sit amet consectetur. Viverra ut sed volutpat enim. .</p>
+                    <div class="d-flex mt-4 pt-2 gap_counterbox">
+                        <a href="https://www.facebook.com/" target="_blank"><img
+                                src="./assets/images/svg/facbook-icon.svg" class="footer_icons" alt="facebook"></a>
+                        <a href="https://www.instagram.com/accounts/login/" target="_blank"><img
+                                src="./assets/images/svg/instagram-icon.svg" class="footer_icons" alt="instagram"></a>
+                        <a href="https://www.facebook.com/" target="_blank"><img
+                                src="./assets/images/svg/telegram-icon.svg" class="footer_icons" alt="telegram"></a>
+                    </div>
+                </div>
             </div>
-            <div class="col-3 d-flex justify-content-center">
-                <a href=""> <img src="./assets/images/svg/binance-logo.svg" class=" logos_img" alt="binance">
-                </a>
-            </div>
-            <div class="col-3 d-flex justify-content-center">
-                <a href=""> <img src="./assets/images/svg/paypal-logo.svg" class=" logos_img" alt="paypali">
-                </a>
-            </div>
-            <div class="col-3 d-flex justify-content-center">
-                <a href=""> <img src="./assets/images/svg/microsoft-logo.svg" class=" logos_img" alt="microsoft">
-                </a>
-            </div>
+            <p class="py-1 bg-blue text-center ff_inter text-xs fw-normal color-extralight-white">Privacy
+                Policy | Conditions | Report Abuse/ Spam</p>
+            <div class="logo_slider mx-auto ps-4 d-flex justify-content-between py_40 bg-white px-3">
+                <div class="col-3 d-flex justify-content-center">
+                    <a href=""><img src="./assets/images/svg/open-ai-logo.svg" class=" logos_img" alt="open ai">
+                    </a>
+                </div>
+                <div class="col-3 d-flex justify-content-center">
+                    <a href=""> <img src="./assets/images/svg/binance-logo.svg" class=" logos_img" alt="binance">
+                    </a>
+                </div>
+                <div class="col-3 d-flex justify-content-center">
+                    <a href=""> <img src="./assets/images/svg/paypal-logo.svg" class=" logos_img" alt="paypali">
+                    </a>
+                </div>
+                <div class="col-3 d-flex justify-content-center">
+                    <a href=""> <img src="./assets/images/svg/microsoft-logo.svg" class=" logos_img" alt="microsoft">
+                    </a>
+                </div>
 
 
         </div>
-
-        <!-- bootstrap link -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-            crossorigin="anonymous"></script>
-        <!-- slider-link -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"
-            integrity="sha512-eP8DK17a+MOcKHXC5Yrqzd8WI5WKh6F1TIk5QZ/8Lbv+8ssblcz7oGC8ZmQ/ZSAPa7ZmsCU4e/hcovqR8jfJqA=="
-            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="./assets/js/app.js"></script>
+    </div>
+    <!-- bootstrap link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- slider-link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"
+        integrity="sha512-eP8DK17a+MOcKHXC5Yrqzd8WI5WKh6F1TIk5QZ/8Lbv+8ssblcz7oGC8ZmQ/ZSAPa7ZmsCU4e/hcovqR8jfJqA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assets/js/app.js"></script>
 
         <!-- work_slider -->
         <script>
