@@ -422,6 +422,10 @@ input[type="submit"]:hover {
     .buying_img {
         top: -21%;
     }
+
+    .bg_benefit {
+        top: 0;
+    }
 }
 
 @media (max-width: 992px) {
@@ -497,10 +501,6 @@ input[type="submit"]:hover {
     .research_img {
         height: 316px;
         object-position: right;
-    }
-
-    .bg_benefit {
-        top: 0;
     }
 
     .pt_benefitcontent {
