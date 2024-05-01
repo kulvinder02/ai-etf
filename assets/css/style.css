@@ -143,6 +143,14 @@
 .color-extradark-grey {
     color: var(--color-extradark-grey);
 }
+.cursour_pointer{
+    cursor: pointer !important;
+}
+@media (max-width:992px) {
+    :root {
+        --font-xl: 35px;
+       }
+}
 @media (max-width:576px) {
     :root {
         --font-xs: 14px;
@@ -396,8 +404,19 @@ body {
     border-radius: 3px !important;
     background-color: #553AF5 !important;
   }
-  
-  
+  .fotter_bg{
+    height: 780px;
+}
+.fttr_slider{
+    display: flex;
+    justify-content: center;
+}
+@media (max-width:1620px) {
+    .fotter_bg{
+      height: 520px;
+    }
+}  
+
 @media (max-width: 991.9px) {
      .logos_img{
         width: 241px !important;
