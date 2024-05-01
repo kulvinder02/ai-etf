@@ -1,73 +1,3 @@
-* {
-    list-style: none;
-    padding-bottom: 0 !important;
-    margin-bottom: 0 !important;
-    text-decoration: none !important;
-}
-
-.body {
-    background-color: #0D0C19 !important;
-}
-
-.bg_color {
-    background-color: #0D0C19 !important;
-}
-
-/* =============================common-classes====================== */
-/* ------------------------line-height--------------- */
-.lh_116 {
-    line-height: 116%;
-}
-
-.lh_124 {
-    line-height: 124%;
-}
-
-.lh_85 {
-    line-height: 85%;
-}
-
-.lh_160 {
-    line-height: 160%;
-}
-
-
-/* ----------------------gap------------------- */
-.gap_34 {
-    gap: 34px;
-}
-
-.common_btn {
-    padding: 24.23px 34px 24.23px 34px !important;
-    border-radius: 132px;
-    border: 1px solid white;
-    background: #553AF5;
-    box-shadow: 0px 4px 53.2px 0px #553AF594;
-}
-
-.common_button {
-    transition: all 200ms ease-in-out;
-    padding: 22px 33.5px 22px 33.5px !important;
-    border-radius: 132px;
-    border: 1px solid white;
-    background: #553AF5;
-    box-shadow: 0px 4px 53.2px 0px #553AF594;
-}
-
-.common_button:hover {
-    color: #0D0C19;
-    background-color: white !important;
-    border: 1px solid #4F37DD;
-}
-
-
-/* =============================header====================== */
-.bg_header {
-    background-image: url("../images/png/bgheader.png");
-    background-size: 100% 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-}
 
 /* ---------------how it work--------------- */
 .max_w_989 {
@@ -127,7 +57,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url("../images/png/bg-half-circle.webp");
+    background-image: url("../images/webp/bg-half-circle.webp");
 }
 
 .pt_211 {
@@ -309,7 +239,7 @@
         height: 505.79px !important;
     }
     .statistics_bg {
-        background-image: url("../images/png/arrows-sm-vector-bg.png");
+        background-image: url("../images/webp/arrows-sm-vector-bg.webp");
     }
     .jeff_img {
         height: 231.88px;
@@ -343,7 +273,7 @@
         background-size: 160% 70% !important;
     }
     .advisors_sm_bg{
-        background-image: url("../images/png/advisor-sm-bg.png");
+        background-image: url("../images/webp/advisor-sm-bg.webp");
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;

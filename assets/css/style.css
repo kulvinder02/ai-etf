@@ -223,15 +223,6 @@ body {
     border: 1px solid #4F37DD;
 }
 
-
-/* =============================header====================== */
-.bg_header {
-    background-image: url("../images/png/bgheader.png");
-    background-size: 100% 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
 /* ---------------how it work--------------- */
 .max_w_989 {
     max-width: 989px;
@@ -296,7 +287,7 @@ body {
 }
 .statistics_bg{
     height: 350px;
-    background-image: url("../images/png/arrows-vector-bg.png");
+    background-image: url("../images/webp/arrows-vector-bg.webp");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -349,7 +340,7 @@ body {
 }
 /* ------  fotter -------- */
 .fotter_bg{
-    background-image: url("../images/png/footer-bg.webp");
+    background-image: url("../images/webp/footer-bg.webp");
     height: 520px;
     background-position:center;
     background-size: cover;
@@ -449,45 +440,6 @@ body {
         background: white !important;
     }
 
-    .mobile_screen {
-        position: fixed;
-        top: 0;
-        min-height: 100vh;
-        width: 100%;
-        right: -100%;
-        background-color: #86ccea;
-        transition: 300ms linear;
-    }
-
-    .menu_btn {
-        width: 25px;
-        height: 20px;
-        background-color: inherit;
-    }
-
-    .menu_btn span {
-        width: 100%;
-        height: 3px;
-        background-color: white;
-        transition: 300ms linear;
-    }
-
-    .overflow_hidden {
-        overflow: hidden;
-    }
-
-    .cross .line1 {
-        transform: rotate(50deg) translate(12px, 11px);
-    }
-
-    .cross .line2 {
-        transform: translateX(-50%);
-        opacity: 0;
-    }
-
-    .cross .line3 {
-        transform: rotate(-50deg) translateY(-50%);
-    }
 }
 
 @media (max-width:767.9px) {
@@ -517,7 +469,7 @@ body {
     .statistics_bg {
         transform: translateY(78px);
         background-size: 100% 57%;
-        background-image: url("../images/png/arrows-sm-vector-bg.png") !important;
+        background-image: url("../images/webp/arrows-sm-vector-bg.webp") !important;
     }
 
     .slick-dots {
@@ -557,9 +509,12 @@ body {
 }
 
 @media (max-width:377px) {
+    .mw_333 {
+        max-width: 333px !important;
+    }
     .top_5ets_sm_bg {
         background-size: 125% 136% !important;
-        background-image: url("../images/png/top-5ets-sm-bg.png") !important;
+        background-image: url("../images/webp/top-5ets-sm-bg.webp") !important;
     }
     .top_etf_img{
         width: 335px !important;
@@ -572,8 +527,667 @@ body {
         transform: translateY(180px) !important;
     }
 }
+
+/* ----------------------dev css---------------------- */
+
+/* =============================header====================== */
+.nav_link::after {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    width: 0;
+    height: 3px;
+    left: 50%;
+    bottom: -7px;
+    transition: 0.3s linear;
+}
+
+.nav_link:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.bg_header {
+    background-image: url("../images/webp/bgheader.webp");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.pb_nav {
+    padding-bottom: 90.38px !important;
+}
+
+.mw_687 {
+    max-width: 687px;
+}
+
+.ai_img {
+    max-width: 651px;
+}
+
+.countdown_box {
+    margin-top: 35px !important;
+    padding: 11px 9px 11px 9px !important;
+    border-radius: 20px;
+    background: #8989890D;
+    border: 1px solid #FFFFFF17
+}
+
+.countdown {
+    border-radius: 10px;
+    min-height: 75px;
+    background: #FFFFFF08;
+    box-shadow: 0px 9.03px 33.86px 0px #00000069 !important;
+    box-shadow: 0px 0px 13.54px 0px #FFFFFF08 inset !important;
+}
+
+.count_day,
+.count_hour {
+    width: 95px;
+}
+
+.count_mint {
+    width: 91px;
+}
+
+.conut_sec {
+    width: 92px;
+}
+
+.ai_card {
+    background: #8989890D;
+    border: 3px solid #553AF5;
+    border-radius: 20px;
+    max-width: 454px;
+}
+
+.ai_contentbox {
+    background-color: var(--color-blue);
+    padding: 15.14px 36.93px 15px 35.84px !important;
+    border-radius: 16px;
+}
+
+.mt_10 {
+    margin-top: 10.86px !important;
+}
+
+.ai_form {
+    padding: 18px 21px 18px 21px !important;
+}
+
+.gap_counterbox {
+    gap: 14px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    padding: 22.24px 0 22.24px 18px !important;
+    border: 1px solid #ccc;
+    outline: none;
+    box-shadow: 0px 0px 13.54px 0px #FFFFFF08 inset;
+    background: #FFFFFF;
+    border-radius: 66px;
+}
+
+input[type="submit"] {
+    padding: 24.24px !important;
+    background-color: var(--color-blue);
+    border-radius: 132px;
+    box-shadow: 0px 4px 53.2px 0px #553AF594;
+    border: 1px solid #FFFFFF
+}
+
+input[type="submit"]:hover {
+    background-color: white;
+    color: var(--color-blue) !important;
+    border: 1px solid var(--color-blue);
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+}
+
+.pb_header {
+    padding-bottom: 69px !important;
+}
+
+.ai_slide {
+    border: 1px solid #FFFFFF17;
+    background: #8989890D;
+    border-radius: 10px;
+    padding: 21.17px 37px 21.17px 37px !important;
+}
+
+.slide_img {
+    max-width: 101.61px;
+    margin-bottom: 9.35px !important;
+}
+
+.common_slideellips {
+    width: 79.3px;
+    height: 79.3px;
+    border-radius: 79.3px;
+    bottom: 27%;
+    left: 31px;
+    filter: blur(65px);
+    background: #553AF5;
+}
+
+.live_img {
+    max-width: 89.63px;
+    right: 14px;
+    top: 12.87px;
+}
+
+.my_9 {
+    margin-top: 9.35px !important;
+    margin-bottom: 9.35px !important;
+}
+
+.slide {
+    padding: 0 16.2px !important;
+}
+
+.p_aislider {
+    padding-bottom: 269px !important;
+}
+
+.counter_ellips {
+    width: 44.02px;
+    height: 18.06px;
+    background: #553AF5;
+    filter: blur(15.8px);
+    top: 71.2px;
+}
+
+.header_ellips {
+    width: 311.89px;
+    height: 311.89px;
+    border-radius: 311.89px;
+    filter: blur(100px);
+    background: rgba(85, 58, 245, 0.6);
+    left: -15%;
+    top: 13%;
+}
+
+.gap_counter {
+    gap: 12px !important;
+}
+
+/* -----------------------------------leveraged-------------------------- */
+
+.buying_img {
+    top: -30%;
+}
+
+.mw_806 {
+    max-width: 806px;
+}
+
+.buying_card {
+    padding-top: 30px !important;
+    min-height: 446px;
+    max-width: 351px;
+    box-shadow: 0px 31px 73.8px 0px #00000033;
+    background: #FFFFFF08;
+    border-radius: 11.9px;
+    border: transparent !important;
+}
+
+.buying_card:hover {
+    box-shadow: 1px 8px 20px #00000033;
+    -webkit-transition: box-shadow .6s ease-in;
+}
+
+.px_return {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.buying_slider .slick-list {
+    overflow: visible !important;
+}
+
+.buying_slider .slick-dots {
+    padding-bottom: 50.34px !important;
+}
+
+.buying_slider .slick-track {
+    padding-top: 50px !important;
+    padding-bottom: 50.93px !important;
+    z-index: 9 !important;
+    overflow: visible !important;
+    display: flex !important;
+}
+
+.py_buying {
+    padding-top: 100.93px !important;
+    padding-bottom: 74.7px !important;
+}
+
+.buying_slider .slick-slide {
+    height: inherit !important;
+    display: flex !important;
+}
+
+.buying_slider .slick-slide>div {
+    display: flex;
+}
+
+.px_12 {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.bottom-0 {
+    bottom: -26% !important;
+}
+
+.buying_ellips {
+    width: 183.22px;
+    height: 97.73px;
+    background: #553AF5;
+    filter: blur(80.7px);
+    left: 124px;
+    bottom: -30%;
+}
+
+/* ---------------------------------------benefit-------------------------------- */
+.p_benefits {
+    padding-top: 123px;
+}
+
+.bg_benefit {
+    top: -0.5%;
+}
+
+.pt_benefitcontent {
+    padding-top: 123px;
+}
+
+.mw_471 {
+    max-width: 471px;
+}
+
+.pt_reserch {
+    padding-top: 59.22px;
+}
+
+.my_returnpara {
+    margin-top: 26.28px;
+    margin-bottom: 45.9px !important;
+}
+
+.bg_research {
+    background: linear-gradient(to bottom, #FFFFFf 86%, #0D0C19 14%);
+}
+
+.research_img {
+    height: 369.26px;
+}
+
+.benefit_ellips {
+    width: 151.64px;
+    height: 151.64px;
+    border-radius: 50%;
+    background: #553AF5;
+    filter: blur(62.25px);
+}
+
+.benefit_para {
+    max-width: 606px;
+}
+
+.benefit_img {
+    max-width: 471px;
+}
+/* ---------------------------------back-to-top------------------------------------ */
+.BackToTop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 6 !important;
+    width: 50px !important;
+    height: 50px !important;
+    background-color: #0073B1;
+    border: 1px solid white;
+    border-radius: 50px;
+    box-shadow: 0px 5px 16px #ffffff;
+    -webkit-animation: mover 3000ms infinite ease-in-out !important;
+    animation: mover 3000ms infinite ease-in-out !important;
+}
+
+@keyframes mover {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    70% {
+        transform: translateY(-7px);
+    }
+
+}
+@media (max-width:1200px) {
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+        padding: 18.24px 0 18.24px 18px !important;
+    }
+
+    input[type="submit"] {
+        padding: 20px !important;
+    }
+
+    .buying_card {
+        padding-top: 30px !important;
+        padding-bottom: 30px !important;
+    }
+
+    .research_img {
+        height: 369.26px;
+        object-fit: cover;
+    }
+
+    .p_aislider {
+        padding-bottom: 200px !important;
+    }
+
+    .benefit_para {
+        max-width: 521px;
+    }
+
+    .buying_img {
+        top: -21%;
+    }
+
+    .bg_benefit {
+        top: 0;
+    }
+}
+
+@media (max-width: 992px) {
+    .mobile_screen {
+        position: fixed;
+        top: 0;
+        min-height: 100vh;
+        width: 100%;
+        right: -100%;
+        background-color: #0D0C19 !important;
+        transition: 300ms linear;
+    }
+
+    .menu_btn {
+        width: 26.9px;
+        height: 17.39px;
+        background-color: inherit;
+    }
+
+    .menu_btn span {
+        width: 100%;
+        height: 3px;
+        background-color: white;
+        transition: 300ms linear;
+        border-radius: 24px;
+    }
+
+    .overflow_hidden {
+        overflow: hidden;
+    }
+
+    .cross .line1 {
+        transform: rotate(50deg) translate(12px, 11px);
+    }
+
+    .cross .line2 {
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+
+    .cross .line3 {
+        transform: rotate(-50deg) translateY(-50%);
+    }
+
+    .bg_header {
+        background-size: cover !important;
+    }
+
+    .mw_687 {
+        max-width: unset;
+    }
+
+    .ai_card {
+        max-width: unset;
+    }
+
+    .countdown_box {
+        margin-top: 20px !important;
+        max-width: 505px !important;
+    }
+
+    .slide {
+        padding: 0 10px !important;
+    }
+
+    .mw_806 {
+        max-width: unset;
+    }
+
+    .buying_img {
+        top: -20%;
+    }
+
+    .research_img {
+        height: 316px;
+        object-position: right;
+    }
+
+    .pt_benefitcontent {
+        padding-top: 70px;
+    }
+
+    .py_buying {
+        padding-top: 70px !important;
+        padding-bottom: 70px !important;
+    }
+
+    .benefit_para {
+        max-width: 100%;
+    }
+}
+
+@media (max-width:576px) {
+
+    .count_day,
+    .count_hour {
+        width: 56px;
+    }
+
+    .count_mint {
+        width: 52px;
+    }
+
+    .conut_sec {
+        width: 55px;
+    }
+
+    .countdown {
+        min-height: 44px;
+    }
+
+    .countdown_box {
+        padding: 7px 10px 7px 10px !important;
+        max-width: unset !important;
+    }
+
+    .py_aiImg {
+        padding-top: 31px !important;
+        padding-bottom: 12px !important;
+    }
+
+    .pb_nav {
+        padding-bottom: 63.51px !important;
+    }
+
+    .ai_form {
+        padding: 16px 21px 24.83px 21px !important;
+        gap: 5px;
+    }
+
+    .ai_card {
+        margin-bottom: 50px !important;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+        padding: 16.5px 0 16.5px 18px !important;
+    }
+
+    input[type="submit"] {
+        padding: 15.88px !important;
+    }
+
+    .pb_header {
+        padding-bottom: 41.5px !important;
+    }
+
+    .live_img {
+        right: 14px;
+        top: 43.87px;
+        max-width: 45px;
+    }
+
+    .ai_contentbox {
+        padding: 16.58px 8px 16px 8px !important;
+    }
+
+    .buying_card {
+        padding: 51.93px 29.22px 51.93px 29.22px !important;
+        max-width: unset;
+    }
+
+    .buying_img {
+        top: -24%;
+    }
+
+    .p_aislider {
+        padding-bottom: 174.91px !important;
+    }
+
+    .buying_slider .slick-track {
+        padding-top: 40px !important;
+        padding-bottom: 90.53px !important;
+    }
+
+    .mb_benefitimg {
+        margin-bottom: 30.6px !important;
+    }
+
+    .ai_slide {
+        max-width: 272px;
+    }
+
+    .sign_btn {
+        width: 100%;
+    }
+
+    .py_buying {
+        padding-top: 60px !important;
+        padding-bottom: 100px !important;
+    }
+
+    .pt_benefitcontent {
+        padding-top: 60px;
+    }
+
+    .p_benefits {
+        padding-top: 80px;
+    }
+
+    .bg_benefit {
+        top: -5%;
+    }
+
+    .mw_220 {
+        max-width: 220px;
+    }
+
+    .mw_283 {
+        max-width: 283px;
+    }
+
+    .mw_333 {
+        max-width: 533px;
+    }
+
+    .benefit_img {
+        max-width: 331px;
+    }
+
+    .ai_img {
+        max-width: 333px;
+    }
+
+    .fs_xl {
+        font-size: 26px !important;
+    }
+
+    .fs_lg {
+        font-size: 20px !important;
+    }
+
+    .fs_sm {
+        font-size: 20px !important;
+    }
+
+    .head_buyingcard {
+        font-size: 18px !important;
+    }
+
+    .mw_duecontent {
+        max-width: 290px;
+    }
+
+    .gap_counter {
+        gap: 6.21px !important;
+    }
+
+    .gap_counterbox {
+        gap: 6.79px;
+    }
+
+    .mw_313 {
+        max-width: 313px;
+    }
+
+    .benefit_ellips {
+        top: 12px;
+        z-index: 1;
+    }
+
+    .ellips_benefit {
+        width: 228px;
+        height: 228px;
+        background: #553AF53B;
+        filter: blur(90px);
+        top: 26px;
+    }
+}
+
+
 @media (min-width:1200px) {
     .custom_container {
         max-width: 1164px !important;
+    }
+
+    .p_aislider {
+        padding-top: 102px !important;
+
     }
 }

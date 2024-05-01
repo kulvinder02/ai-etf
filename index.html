@@ -46,6 +46,10 @@
     </head>
 
     <body>
+        <!-- ----------back to top---------- -->
+        <div id="backToTopBtn" class="BackToTop cursor_pointer justify-content-center align-items-center">
+            <img src="./assets/images/webp/back-to-top.webp" alt="BackToTop">
+        </div>
         <!-- ---------------------header------------------ -->
         <div class="bg_header position-relative overflow-hidden">
             <div class="position-absolute header_ellips d-sm-flex d-none"></div>
@@ -118,8 +122,8 @@
                                     coverage,</span>
                                 registration
                                 closes in</p>
-                            <div id="countdown" class="countdown_box counter d-flex gap_14">
-                                <div class="d-flex align-items-center gap_12">
+                            <div id="countdown" class="countdown_box counter d-flex gap_counterbox">
+                                <div class="d-flex align-items-center gap_counter">
                                     <div
                                         class="countdown overflow-hidden count_day h-100 d-flex align-items-center justify-content-center position-relative">
                                         <div class="position-absolute counter_ellips"></div>
@@ -133,7 +137,7 @@
                                             fill="#553AF5" />
                                     </svg>
                                 </div>
-                                <div class="d-flex align-items-center gap_12">
+                                <div class="d-flex align-items-center gap_counter">
                                     <div
                                         class="countdown count_hour h-100 d-flex align-items-center justify-content-center position-relative overflow-hidden">
                                         <div class="position-absolute counter_ellips"></div>
@@ -147,7 +151,7 @@
                                             fill="#553AF5" />
                                     </svg>
                                 </div>
-                                <div class="d-flex align-items-center gap_12">
+                                <div class="d-flex align-items-center gap_counter">
                                     <div
                                         class="countdown count_mint h-100 d-flex align-items-center justify-content-center position-relative overflow-hidden">
                                         <div class="position-absolute counter_ellips"></div>
@@ -171,6 +175,7 @@
                                 </div>
                             </div>
                         </div>
+
                     </div>
                     <div
                         class="col-xl-5 col-lg-5 col-12 d-flex flex-column align-items-lg-end align-items-center pt-lg-0 pt-sm-4">
@@ -1601,6 +1606,28 @@
       };
       updateCounter();
     });
+</script>
+
+<!-- ------back to top----- -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+    var backToTopBtn = document.getElementById('backToTopBtn');
+
+    window.addEventListener('scroll', function () {
+        if (window.scrollY > 300) {
+            backToTopBtn.style.display = 'flex';
+        } else {
+            backToTopBtn.style.display = 'none';
+        }
+    });
+
+    backToTopBtn.addEventListener('click', function () {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+});
 </script>
 
 
