@@ -6,7 +6,7 @@ function openNav() {
 }
 // ----------------------------countdown---------------------
 function countdown() {
-    const endDate = new Date("2024-05-01 00:00:00").getTime();
+    const endDate = new Date("2024-05-24 00:00:00").getTime();
 
     const timer = setInterval(function () {
         const now = new Date().getTime();
@@ -37,7 +37,7 @@ countdown();
 
 // -------------------count-down---------------------
 function counterapp() {
-    const endDate = new Date("2024-05-01 00:00:00").getTime();
+    const endDate = new Date("2024-05-24 00:00:00").getTime();
 
     const timer = setInterval(function () {
         const now = new Date().getTime();
@@ -167,6 +167,38 @@ $('.responsive').slick({
             breakpoint: 576,
             settings: {
                 slidesToShow: 1,
+            }
+        },
+    ]
+});
+$('.buying_slider').slick({
+    dots: false,
+    arrows: false,
+    infinite: true,
+    speed: 3000,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [
+        {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 3,
+                infinite: true,
+            }
+        },
+        {
+            breakpoint: 960,
+            settings: {
+                slidesToShow: 2,
+            }
+        },
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 1,
+                dots: true,
             }
         },
     ]

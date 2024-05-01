@@ -9,6 +9,10 @@ body {
 }
 
 /* =============================common-classes====================== */
+.cursor_pointer {
+    cursor: pointer;
+}
+
 /* ------------------------line-height--------------- */
 .lh_85 {
     line-height: 85%;
@@ -16,6 +20,10 @@ body {
 
 .lh_116 {
     line-height: 116%;
+}
+
+.lh_118 {
+    line-height: 118%;
 }
 
 .lh_120 {
@@ -30,7 +38,15 @@ body {
     line-height: 160%;
 }
 
+.lh_164 {
+    line-height: 164%;
+}
+
 /* -----------------------opacity--------------------- */
+.opacity_70 {
+    opacity: 70%;
+}
+
 .opacity_80 {
     opacity: 80%;
 }
@@ -73,6 +89,22 @@ input[type="submit"] {
 }
 
 /* =============================header====================== */
+.nav_link::after {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    width: 0;
+    height: 3px;
+    left: 50%;
+    bottom: -7px;
+    transition: 0.3s linear;
+}
+
+.nav_link:hover::after {
+    width: 100%;
+    left: 0;
+}
+
 .bg_header {
     background-image: url("../images/png/bgheader.png");
     background-size: 100% 100%;
@@ -213,8 +245,8 @@ input[type="submit"]:hover {
     padding: 0 16.2px !important;
 }
 
-.py_slider {
-    padding-bottom: 90px !important;
+.p_aislider {
+    padding-bottom: 269px !important;
 }
 
 .counter_ellips {
@@ -235,6 +267,128 @@ input[type="submit"]:hover {
     top: 13%;
 }
 
+/* -----------------------------------leveraged-------------------------- */
+
+.buying_img {
+    top: -28%;
+}
+
+.mw_806 {
+    max-width: 806px;
+}
+
+.buying_card {
+    padding-top: 30px !important;
+    min-height: 446px;
+    max-width: 351px;
+    box-shadow: 0px 31px 73.8px 0px #00000033;
+    background: #FFFFFF08;
+    border-radius: 11.9px;
+}
+
+.px_return {
+    padding-left: 26px;
+    padding-right: 27px;
+}
+
+.buying_slider .slick-list {
+    overflow: visible !important;
+}
+
+.buying_slider .slick-dots {
+    padding-bottom: 50.34px !important;
+}
+
+.buying_slider .slick-track {
+    padding-top: 50px !important;
+    padding-bottom: 50.93px !important;
+    z-index: 9 !important;
+    overflow: visible !important;
+    display: flex !important;
+}
+
+.py_buying {
+    padding-top: 100.93px !important;
+    padding-bottom: 74.7px !important;
+}
+
+.buying_slider .slick-slide {
+    height: inherit !important;
+    display: flex !important;
+}
+
+.buying_slider .slick-slide>div {
+    display: flex;
+}
+
+.px_12 {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.bottom-0 {
+    bottom: -26% !important;
+}
+
+.buying_ellips {
+    width: 183.22px;
+    height: 97.73px;
+    background: #553AF5;
+    filter: blur(80.7px);
+    left: 124px;
+    bottom: -30%;
+}
+
+/* ---------------------------------------benefit-------------------------------- */
+.p_benefits {
+    padding-top: 123px;
+}
+
+.bg_benefit {
+    top: -3%;
+}
+
+.pt_benefitcontent {
+    padding-top: 123px;
+}
+
+.mw_471 {
+    max-width: 471px;
+}
+
+.pt_reserch {
+    padding-top: 59.22px;
+}
+
+.my_returnpara {
+    margin-top: 26.28px;
+    margin-bottom: 45.9px !important;
+}
+
+.bg_research {
+    background: linear-gradient(to bottom, #FFFFFf 86%, #0D0C19 14%);
+}
+
+.research_img {
+    height: 369.26px;
+}
+
+.benefit_ellips {
+    width: 151.64px;
+    height: 151.64px;
+    border-radius: 50%;
+    background: #553AF5;
+    filter: blur(62.25px);
+}
+
+.benefit_para {
+    max-width: 606px;
+}
+
+.benefit_img {
+    max-width: 471px;
+}
+
 @media (max-width:1200px) {
 
     input[type="text"],
@@ -246,6 +400,32 @@ input[type="submit"]:hover {
     input[type="submit"] {
         padding: 20px !important;
     }
+
+    .buying_card {
+        padding-top: 30px !important;
+        padding-bottom: 30px !important;
+    }
+
+    .research_img {
+        height: 369.26px;
+        object-fit: cover;
+    }
+
+    .p_aislider {
+        padding-bottom: 200px !important;
+    }
+
+    .benefit_para {
+        max-width: 521px;
+    }
+
+    .buying_img {
+        top: -21%;
+    }
+
+    .bg_benefit {
+        top: 0;
+    }
 }
 
 @media (max-width: 992px) {
@@ -255,7 +435,7 @@ input[type="submit"]:hover {
         min-height: 100vh;
         width: 100%;
         right: -100%;
-        background-color: #0D0C19;
+        background-color: #0D0C19 !important;
         transition: 300ms linear;
     }
 
@@ -310,6 +490,31 @@ input[type="submit"]:hover {
         padding: 0 10px !important;
     }
 
+    .mw_806 {
+        max-width: unset;
+    }
+
+    .buying_img {
+        top: -20%;
+    }
+
+    .research_img {
+        height: 316px;
+        object-position: right;
+    }
+
+    .pt_benefitcontent {
+        padding-top: 70px;
+    }
+
+    .py_buying {
+        padding-top: 70px !important;
+        padding-bottom: 70px !important;
+    }
+
+    .benefit_para {
+        max-width: 100%;
+    }
 }
 
 @media (max-width:576px) {
@@ -336,9 +541,9 @@ input[type="submit"]:hover {
         max-width: unset !important;
     }
 
-    .ai_img {
-        margin-top: 31px !important;
-        margin-bottom: 12px !important;
+    .py_aiImg {
+        padding-top: 31px !important;
+        padding-bottom: 12px !important;
     }
 
     .pb_nav {
@@ -377,6 +582,73 @@ input[type="submit"]:hover {
     .ai_contentbox {
         padding: 16.58px 8px 16px 8px !important;
     }
+
+    .buying_card {
+        padding: 51.93px 29.22px 51.93px 29.22px !important;
+        max-width: unset;
+    }
+
+    .buying_img {
+        top: -24%;
+    }
+
+    .p_aislider {
+        padding-bottom: 174.91px !important;
+    }
+
+    .buying_slider .slick-track {
+        padding-top: 40px !important;
+        padding-bottom: 90.53px !important;
+    }
+
+    .mb_benefitimg {
+        margin-bottom: 30.6px !important;
+    }
+
+    .ai_slide {
+        max-width: 272px;
+    }
+
+    .sign_btn {
+        width: 100%;
+    }
+
+    .py_buying {
+        padding-top: 60px !important;
+        padding-bottom: 100px !important;
+    }
+
+    .pt_benefitcontent {
+        padding-top: 60px;
+    }
+
+    .p_benefits {
+        padding-top: 80px;
+    }
+
+    .bg_benefit {
+        top: -5%;
+    }
+
+    .mw_220 {
+        max-width: 220px;
+    }
+
+    .mw_283 {
+        max-width: 283px;
+    }
+
+    .mw_333 {
+        max-width: 333px;
+    }
+
+    .benefit_img {
+        max-width: 331px;
+    }
+
+    .ai_img {
+        max-width: 333px;
+    }
 }
 
 @media (min-width:1200px) {
@@ -384,7 +656,7 @@ input[type="submit"]:hover {
         max-width: 1164px !important;
     }
 
-    .py_slider {
+    .p_aislider {
         padding-top: 102px !important;
 
     }
