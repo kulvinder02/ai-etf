@@ -307,7 +307,11 @@
 }
 
 @media (max-width:767.9px) {
-   
+   .scroll_bar_sm{
+    height: 650px !important;
+    overflow-y: scroll !important;
+    overflow-x: hidden;
+   }
     .group_ellips {
         height: 505.79px !important;
     }
