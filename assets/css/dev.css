@@ -270,7 +270,7 @@ input[type="submit"]:hover {
 /* -----------------------------------leveraged-------------------------- */
 
 .buying_img {
-    top: -28%;
+    top: -30%;
 }
 
 .mw_806 {
@@ -287,8 +287,8 @@ input[type="submit"]:hover {
 }
 
 .px_return {
-    padding-left: 26px;
-    padding-right: 27px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .buying_slider .slick-list {
@@ -649,7 +649,29 @@ input[type="submit"]:hover {
     .ai_img {
         max-width: 333px;
     }
+
+    .fs_xl {
+        font-size: 26px !important;
+    }
+
+    .fs_lg {
+        font-size: 20px !important;
+    }
+
+    .fs_sm {
+        font-size: 20px !important;
+    }
+
+    .head_buyingcard {
+        font-size: 18px !important;
+    }
+
+    .px_duecontent {
+        padding-left: 26px;
+        padding-right: 26px;
+    }
 }
+
 
 @media (min-width:1200px) {
     .custom_container {
