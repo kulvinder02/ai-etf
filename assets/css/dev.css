@@ -6,6 +6,9 @@
 html,
 body {
     background: #0D0C19 !important;
+    max-width: 1920px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
 }
 
 /* =============================common-classes====================== */
@@ -35,7 +38,7 @@ body {
 }
 
 .lh_160 {
-    line-height: 160%;
+    line-height: 160% !important;
 }
 
 .lh_164 {
