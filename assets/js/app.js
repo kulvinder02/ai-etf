@@ -5,66 +5,66 @@ function openNav() {
     document.getElementById("menubtn-icon").classList.toggle("cross")
 }
 // ----------------------------countdown---------------------
-// function countdown() {
-//     const endDate = new Date("2024-05-24 00:00:00").getTime();
+function countdown() {
+    const endDate = new Date("2024-05-24 00:00:00").getTime();
 
-//     const timer = setInterval(function () {
-//         const now = new Date().getTime();
-//         const distance = endDate - now;
+    const timer = setInterval(function () {
+        const now = new Date().getTime();
+        const distance = endDate - now;
 
-//         const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-//         const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-//         const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-//         const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-//         document.getElementById("days").innerHTML = formatTime(days);
-//         document.getElementById("hours").innerHTML = formatTime(hours);
-//         document.getElementById("minutes").innerHTML = formatTime(minutes);
-//         document.getElementById("seconds").innerHTML = formatTime(seconds);
+        document.getElementById("days").innerHTML = formatTime(days);
+        document.getElementById("hours").innerHTML = formatTime(hours);
+        document.getElementById("minutes").innerHTML = formatTime(minutes);
+        document.getElementById("seconds").innerHTML = formatTime(seconds);
 
-//         if (distance < 0) {
-//             clearInterval(timer);
-//             document.querySelector('.counter').innerHTML = '<div>Expired</div>';
-//         }
-//     }, 1000);
-// }
+        if (distance < 0) {
+            clearInterval(timer);
+            document.querySelector('.counter').innerHTML = '<div>Expired</div>';
+        }
+    }, 1000);
+}
 
-// function formatTime(time) {
-//     return time < 10 ? `0${time}` : time;
-// }
+function formatTime(time) {
+    return time < 10 ? `0${time}` : time;
+}
 
-// countdown();
+countdown();
 
 // -------------------count-down---------------------
-// function counterapp() {
-//     const endDate = new Date("2024-05-24 00:00:00").getTime();
+function counterapp() {
+    const endDate = new Date("2024-05-24 00:00:00").getTime();
 
-//     const timer = setInterval(function () {
-//         const now = new Date().getTime();
-//         const distance = endDate - now;
+    const timer = setInterval(function () {
+        const now = new Date().getTime();
+        const distance = endDate - now;
 
-//         const day = Math.floor(distance / (1000 * 60 * 60 * 24));
-//         const hour = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-//         const minute = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-//         const second = Math.floor((distance % (1000 * 60)) / 1000);
+        const day = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hour = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minute = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const second = Math.floor((distance % (1000 * 60)) / 1000);
 
-//         document.getElementById("day").innerHTML = formatTime(day);
-//         document.getElementById("hour").innerHTML = formatTime(hour);
-//         document.getElementById("minute").innerHTML = formatTime(minute);
-//         document.getElementById("second").innerHTML = formatTime(second);
+        document.getElementById("day").innerHTML = formatTime(day);
+        document.getElementById("hour").innerHTML = formatTime(hour);
+        document.getElementById("minute").innerHTML = formatTime(minute);
+        document.getElementById("second").innerHTML = formatTime(second);
 
-//         if (distance < 0) {
-//             clearInterval(timer);
-//             document.querySelector('.counterapp').innerHTML = '<div>Expired</div>';
-//         }
-//     }, 1000);
-// }
+        if (distance < 0) {
+            clearInterval(timer);
+            document.querySelector('.counterapp').innerHTML = '<div>Expired</div>';
+        }
+    }, 1000);
+}
 
-// function formatTime(time) {
-//     return time < 10 ? `0${time}` : time;
-// }
+function formatTime(time) {
+    return time < 10 ? `0${time}` : time;
+}
 
-// counterapp();
+counterapp();
 //  -------------------form validation------------------------------
 function validateForm() {
     var firstName = document.getElementById('firstname').value.trim();
