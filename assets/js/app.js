@@ -120,9 +120,9 @@ $('.responsive').slick({
     dots: false,
     arrows: false,
     infinite: true,
-    speed: 3000,
+    speed: 2000,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 1000,
     slidesToShow: 4.73,
     slidesToScroll: 1,
     responsive: [
