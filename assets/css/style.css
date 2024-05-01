@@ -263,7 +263,6 @@ body {
     background: #4F37DD;
     border-radius: 11.9px;
     padding: 30px 22px !important;
-    box-shadow: 9px 0px 10px 7px #24232369;
 }
 
 .slick-dots {
@@ -526,6 +525,9 @@ body {
     }
 }
 @media (max-width:576px) {
+    .step_slider_box {
+        box-shadow: 9px 0px 10px 7px #24232369;
+    }
     .bg_dark_blue{
         background: #0e091d;
     }
