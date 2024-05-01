@@ -227,8 +227,14 @@
     transition: all 300ms ease-in-out !important;
     filter: grayscale(0%) !important;
 }
-
 @media (max-width:1200px) {
+    .group_ellips {
+        transform: translateX(0px) !important;
+        height: 568.79px !important;
+    }
+    .statistics_bg {
+        transform: translateY(40px);
+    }
     .about_advisors {
         padding: 12px 19px 19px 19px;
     }
@@ -301,6 +307,14 @@
 }
 
 @media (max-width:767.9px) {
+   .scroll_bar_sm{
+    height: 650px !important;
+    overflow-y: scroll !important;
+    overflow-x: hidden;
+   }
+    .group_ellips {
+        height: 505.79px !important;
+    }
     .statistics_bg {
         background-image: url("../images/png/arrows-sm-vector-bg.png");
     }
@@ -322,12 +336,20 @@
     }
 }
 
+
 @media (max-width:377px) {
+    .top_etf_img{
+        width: 335px !important;
+        height: 241.41px !important;
+    }
     .pt_211 {
         padding-top: 115px;
     }
-
-    .advisors_sm_bg {
+    .fotter_bg{
+        background-position:center !important;
+        background-size: 160% 70% !important;
+    }
+    .advisors_sm_bg{
         background-image: url("../images/png/advisor-sm-bg.png");
         background-position: center;
         background-size: cover;
