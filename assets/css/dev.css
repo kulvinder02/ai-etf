@@ -399,6 +399,10 @@ input[type="submit"]:hover {
 }
 
 @media (max-width:1200px) {
+    :root {
+        --font-lg: 30px;
+        --font-xl: 40px;
+    }
 
     input[type="text"],
     input[type="email"],
@@ -703,6 +707,10 @@ input[type="submit"]:hover {
         background: #553AF53B;
         filter: blur(90px);
         top: 26px;
+    }
+
+    .nav_link {
+        font-size: 24px !important;
     }
 }
 
