@@ -101,7 +101,7 @@ input[type="submit"] {
 }
 
 .bg_header {
-    background-image: url("../images/png/bgheader.png");
+    background-image: url("../images/webp/bgheader.webp");
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -354,7 +354,7 @@ input[type="submit"]:hover {
 }
 
 .bg_benefit {
-    top: -3%;
+    top: -0.5%;
 }
 
 .pt_benefitcontent {
