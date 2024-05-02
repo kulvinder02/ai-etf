@@ -8,6 +8,46 @@ body {
     background: #0D0C19 !important;
 }
 
+/* --------------------------Preloader------------------------ */
+.typewriter h1 {
+    letter-spacing: .15em;
+    text-shadow: 2px 2px #bcb6b6;
+    animation:
+        typing 2s steps(40, end),
+        blink-caret 2s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: orange;
+    }
+}
+
+.prelader {
+    transition: 300ms ease-in;
+    z-index: 9;
+}
+
+.pointer_event_none {
+    pointer-events: none;
+}
+
 /* =============================common-classes====================== */
 .cursor_pointer {
     cursor: pointer;
@@ -117,6 +157,10 @@ input[type="submit"] {
 
 .ai_img {
     max-width: 651px;
+}
+
+.pt_12 {
+    padding-top: 12.97px;
 }
 
 .countdown_box {
@@ -270,10 +314,10 @@ input[type="submit"]:hover {
     gap: 12px !important;
 }
 
-/* -----------------------------------leveraged-------------------------- */
+/* -----------------------------------buying power-------------------------- */
 
 .buying_img {
-    top: -30%;
+    top: 170% !important;
 }
 
 .mw_806 {
@@ -348,13 +392,17 @@ input[type="submit"]:hover {
     bottom: -30%;
 }
 
-/* ---------------------------------------benefit-------------------------------- */
+.slick-dots li {
+    margin: 0 !important;
+}
+
+/* --------------------------------------high returns-------------------------------- */
 .p_benefits {
     padding-top: 123px;
 }
 
 .bg_benefit {
-    top: -0.5%;
+    top: -2.5%;
 }
 
 .pt_benefitcontent {
@@ -388,6 +436,16 @@ input[type="submit"]:hover {
     border-radius: 50%;
     background: #553AF5;
     filter: blur(62.25px);
+}
+
+.benefit_headellips {
+    width: 311px;
+    height: 311px;
+    border-radius: 311px;
+    background: #553AF53B;
+    filter: blur(90px);
+    left: 36%;
+    top: 11%;
 }
 
 .benefit_para {
@@ -429,7 +487,7 @@ input[type="submit"]:hover {
     }
 
     .buying_img {
-        top: -21%;
+        top: 160% !important;
     }
 
     .bg_benefit {
@@ -504,13 +562,13 @@ input[type="submit"]:hover {
         max-width: unset;
     }
 
+
     .buying_img {
-        top: -20%;
+        top: 226% !important;
     }
 
     .research_img {
         height: 316px;
-        object-position: right;
     }
 
     .pt_benefitcontent {
@@ -524,6 +582,10 @@ input[type="submit"]:hover {
 
     .benefit_para {
         max-width: 100%;
+    }
+
+    .nav_link {
+        font-size: 24px !important;
     }
 }
 
@@ -553,7 +615,7 @@ input[type="submit"]:hover {
 
     .py_aiImg {
         padding-top: 31px !important;
-        padding-bottom: 12px !important;
+        padding-bottom: 12.54px !important;
     }
 
     .pb_nav {
@@ -598,8 +660,9 @@ input[type="submit"]:hover {
         max-width: unset;
     }
 
+
     .buying_img {
-        top: -24%;
+        top: 187% !important;
     }
 
     .p_aislider {
