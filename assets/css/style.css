@@ -150,6 +150,12 @@
 .cursour_pointer{
     cursor: pointer !important;
 }
+@media (max-width:1200px) {
+    :root {
+        --font-lg: 30px;
+        --font-xl: 40px;
+    }
+}
 @media (max-width:992px) {
     :root {
         --font-xl: 35px;
@@ -409,7 +415,7 @@ body {
 }
 @media (max-width:1620px) {
     .fotter_bg{
-      height: 520px;
+      height: 470px;
     }
 }  
 @media (max-width:1200px) {
@@ -874,6 +880,9 @@ input[type="submit"]:hover {
 
 }
 @media (max-width:1200px) {
+    .top_etf_img {
+        height: 260px !important;
+    }
     input[type="text"],
     input[type="email"],
     input[type="tel"] {
@@ -911,7 +920,14 @@ input[type="submit"]:hover {
     }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991.9px) {
+    .top_etf_img {
+        height: 211px !important;
+    }
+    .statics_slider .slick-dots{
+        bottom: -60px !important;
+        display: block !important;
+    }
     .mobile_screen {
         position: fixed;
         top: 0;
@@ -1002,7 +1018,9 @@ input[type="submit"]:hover {
 }
 
 @media (max-width:576px) {
-
+    .top_etf_img {
+        height: 241px !important;
+    }
     .count_day,
     .count_hour {
         width: 56px;
