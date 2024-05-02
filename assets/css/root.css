@@ -147,6 +147,7 @@
     filter: grayscale(0%) !important;
 }
 @media (max-width:1200px) {
+    
     .logos_img {
         width: 319px !important;
         height: 85px !important;
