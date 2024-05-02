@@ -315,9 +315,8 @@ input[type="submit"]:hover {
 }
 
 /* -----------------------------------buying power-------------------------- */
-
 .buying_img {
-    top: 170% !important;
+    top: -30%;
 }
 
 .mw_806 {
@@ -487,7 +486,7 @@ input[type="submit"]:hover {
     }
 
     .buying_img {
-        top: 160% !important;
+        top: -21%;
     }
 
     .bg_benefit {
@@ -562,9 +561,8 @@ input[type="submit"]:hover {
         max-width: unset;
     }
 
-
     .buying_img {
-        top: 226% !important;
+        top: -20%;
     }
 
     .research_img {
@@ -660,9 +658,8 @@ input[type="submit"]:hover {
         max-width: unset;
     }
 
-
     .buying_img {
-        top: 187% !important;
+        top: -24%;
     }
 
     .p_aislider {
@@ -768,7 +765,6 @@ input[type="submit"]:hover {
         top: 26px;
     }
 }
-
 
 @media (min-width:1200px) {
     .custom_container {
